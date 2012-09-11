@@ -276,10 +276,10 @@ border: 2px solid blue!important;
 
 <p>http://creativecommons.org/licenses/by/2.5/</p>
 
-<h4>Original Author:</h4>
+<h4>Original Author</h4>
 
 <p>
-    <strong>Rafael Lima:</strong>
+    <strong>Rafael Lima</strong>
     http://rafael.adm.br
 </p>
 
