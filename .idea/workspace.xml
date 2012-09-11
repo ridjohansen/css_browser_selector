@@ -1,59 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3e50755-fba6-452e-a9ea-8bdac5d5806e" name="Default" comment="CSS Browser Selector V0.6.2">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/glyphicons-halflings-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/glyphicons-halflings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crossdomain.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap-responsive.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap-responsive_lt-ie9.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/plugins.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/vendor/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/vendor/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/vendor/css_browser_selector.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/vendor/css_browser_selector.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/vendor/jquery-1.8.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\apple-touch-icon-114x114-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\apple-touch-icon-144x144-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\apple-touch-icon-57x57-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\apple-touch-icon-72x72-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\apple-touch-icon-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\apple-touch-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\crossdomain.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\css\bootstrap-responsive.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\css\bootstrap-responsive_lt-ie9.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\css\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\css\style.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\img\glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\img\glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\js\main.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\js\plugins.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\js\vendor\bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\js\vendor\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\js\vendor\css_browser_selector.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\js\vendor\jquery-1.8.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\js\vendor\modernizr-2.6.1-respond-1.1.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\css_browser_selector.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\css_browser_selector.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\images\bg_hr.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\images\blacktocat.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\images\icon_download.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\images\sprite_download.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\javascripts\main.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\params.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\stylesheets\pygment_trac.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\stylesheets\stylesheet.css" afterPath="" />
+    <list default="true" id="c3e50755-fba6-452e-a9ea-8bdac5d5806e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="css_browser_selector.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -230,7 +179,11 @@
       <created>1347400027064</created>
       <updated>1347400027064</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="CSS Browser Selector V0.6.2">
+      <created>1347401093661</created>
+      <updated>1347401093661</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
