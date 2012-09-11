@@ -1,7 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3e50755-fba6-452e-a9ea-8bdac5d5806e" name="Default" comment="" />
+    <list default="true" id="c3e50755-fba6-452e-a9ea-8bdac5d5806e" name="Default" comment="CSS Browser Selector V0.6.2">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/glyphicons-halflings-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crossdomain.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap-responsive.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap-responsive_lt-ie9.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/plugins.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/vendor/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/vendor/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/vendor/css_browser_selector.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/vendor/css_browser_selector.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/vendor/jquery-1.8.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\apple-touch-icon-114x114-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\apple-touch-icon-144x144-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\apple-touch-icon-57x57-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\apple-touch-icon-72x72-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\apple-touch-icon-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\apple-touch-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\crossdomain.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\css\bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\css\bootstrap-responsive_lt-ie9.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\css\style.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\img\glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\img\glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\js\main.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\js\plugins.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\js\vendor\bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\js\vendor\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\js\vendor\css_browser_selector.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\js\vendor\jquery-1.8.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\bootstrap\js\vendor\modernizr-2.6.1-respond-1.1.0.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\css_browser_selector.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\css_browser_selector.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\images\bg_hr.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\images\blacktocat.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\images\icon_download.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\images\sprite_download.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\javascripts\main.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\params.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\stylesheets\pygment_trac.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\EasyPHP\www\github\css_browser_selector\stylesheets\stylesheet.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+    </list>
     <ignored path="css_browser_selector.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,20 +74,28 @@
     <favorites_list name="css_browser_selector" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/tests/tester.html" />
+        <option value="$PROJECT_DIR$/tests/test_android.html" />
+        <option value="$PROJECT_DIR$/tests/jquery.js" />
+        <option value="$PROJECT_DIR$/bootstrap/css/bootstrap-responsive_lt-ie9.css" />
+        <option value="$PROJECT_DIR$/css_browser_selector.js" />
+        <option value="$PROJECT_DIR$/css_browser_selector.min.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+      </list>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -69,6 +130,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -97,18 +168,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -116,12 +177,41 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="settings.github" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <configuration useDefault="false">C:\Users\Richard\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c3e50755-fba6-452e-a9ea-8bdac5d5806e" name="Default" comment="" />
@@ -132,28 +222,36 @@
       <created>1347398539347</created>
       <updated>1347398539347</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="CSS Browser Selector V0.6.2">
+      <created>1347399284461</created>
+      <updated>1347399284461</updated>
+    </task>
+    <task id="LOCAL-00003" summary="CSS Browser Selector V0.6.2">
+      <created>1347400027064</created>
+      <updated>1347400027064</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3288364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32715008" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288364" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25417298" sideWeight="0.67116356" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25872535" sideWeight="0.6728499" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715008" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -215,9 +313,95 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/tests/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_blackberry.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_ff.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_ie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_iproducts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_safari.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tester.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="73" selection-start="305" selection-end="378" vertical-scroll-proportion="0.3552239">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_android.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="472" selection-end="472" vertical-scroll-proportion="-6.6538463">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="92735" selection-start="92789" selection-end="92789" vertical-scroll-proportion="0.049853373">
+          <folding>
+            <marker date="1347399715277" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_opera.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_chrome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="44" selection-start="2266" selection-end="2266" vertical-scroll-proportion="-19.24776">
+          <folding>
+            <marker date="1347400974356" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1347400974356" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1347400974356" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1347400974356" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
