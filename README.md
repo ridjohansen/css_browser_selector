@@ -7,6 +7,9 @@
     <p>
         CSS Browser Selector + is a very small javascript which empowers CSS selectors.
     </p>
+    <p>
+        <a href="http://ridjohansen.github.com/css_browser_selector/" target="_blank">http://ridjohansen.github.com/css_browser_selector/</a>
+    </p>
 
     <div class="container-fluid">
         <div class="row-fluid">
