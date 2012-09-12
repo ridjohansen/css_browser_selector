@@ -12,6 +12,11 @@
         <a href="http://ridjohansen.github.com/css_browser_selector/" target="_blank">http://ridjohansen.github.com/css_browser_selector/</a>
     </p>
 
+    <h4>See an example:</h4>
+<pre>
+&lt;html lang="pt-br" class="webkit chrome chrome21 win win8 js orientation_landscape minw_980 maxw_1199"&gt;
+</pre>
+
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="span12">
