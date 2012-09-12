@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3e50755-fba6-452e-a9ea-8bdac5d5806e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css_browser_selector.rar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index_en.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index_pt.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="css_browser_selector.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +26,54 @@
     <favorites_list name="css_browser_selector" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="33" selection-start="498" selection-end="498" vertical-scroll-proportion="170.84616">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="98" column="34" selection-start="4015" selection-end="4015" vertical-scroll-proportion="0.15178572">
+              <folding>
+                <marker date="1347404897705" expanded="true" signature="2542:2976" placeholder="..." />
+                <marker date="1347404897705" expanded="true" signature="2582:2969" placeholder="..." />
+                <marker date="1347404897705" expanded="true" signature="2594:2664" placeholder="..." />
+                <marker date="1347404897705" expanded="true" signature="2677:2958" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_pt.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index_pt.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="179" column="5" selection-start="7495" selection-end="7495" vertical-scroll-proportion="-7.355263">
+              <folding>
+                <marker date="1347409352367" expanded="true" signature="2582:3016" placeholder="..." />
+                <marker date="1347409352367" expanded="true" signature="2622:3009" placeholder="..." />
+                <marker date="1347409352367" expanded="true" signature="2634:2704" placeholder="..." />
+                <marker date="1347409352367" expanded="true" signature="2717:2998" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_en.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index_en.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="17" selection-start="2543" selection-end="2543" vertical-scroll-proportion="20.578947">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -48,7 +97,10 @@
         <option value="$PROJECT_DIR$/bootstrap/css/bootstrap-responsive_lt-ie9.css" />
         <option value="$PROJECT_DIR$/css_browser_selector.js" />
         <option value="$PROJECT_DIR$/css_browser_selector.min.js" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/index_pt.html" />
+        <option value="$PROJECT_DIR$/index_en.html" />
       </list>
     </option>
   </component>
@@ -193,7 +245,27 @@
       <created>1347401100114</created>
       <updated>1347401100114</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="CSS Browser Selector V0.6.2 - Download">
+      <created>1347401766434</created>
+      <updated>1347401766434</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Link para a página do github">
+      <created>1347402168243</created>
+      <updated>1347402168243</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Google Analytics">
+      <created>1347402621614</created>
+      <updated>1347402621614</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Google Analytics">
+      <created>1347402837920</created>
+      <updated>1347402837920</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Google Analytics">
+      <created>1347403279759</created>
+      <updated>1347403279759</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -218,15 +290,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32715008" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32546374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288364" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288364" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25872535" sideWeight="0.6728499" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26403642" sideWeight="0.6745362" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -277,7 +349,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="CSS Browser Selector V0.6.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Google Analytics" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -291,6 +363,9 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="CSS Browser Selector V0.6.2" />
+    <MESSAGE value="CSS Browser Selector V0.6.2 - Download" />
+    <MESSAGE value="Link para a página do github" />
+    <MESSAGE value="Google Analytics" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -375,14 +450,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="33" selection-start="498" selection-end="498" vertical-scroll-proportion="170.84616">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index_pt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="179" column="5" selection-start="7495" selection-end="7495" vertical-scroll-proportion="-7.355263">
+          <folding>
+            <marker date="1347409352367" expanded="true" signature="2582:3016" placeholder="..." />
+            <marker date="1347409352367" expanded="true" signature="2622:3009" placeholder="..." />
+            <marker date="1347409352367" expanded="true" signature="2634:2704" placeholder="..." />
+            <marker date="1347409352367" expanded="true" signature="2717:2998" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="17" selection-start="2543" selection-end="2543" vertical-scroll-proportion="20.578947">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="44" selection-start="2266" selection-end="2266" vertical-scroll-proportion="-19.24776">
+        <state line="98" column="34" selection-start="4015" selection-end="4015" vertical-scroll-proportion="0.15178572">
           <folding>
-            <marker date="1347400974356" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1347400974356" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1347400974356" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1347400974356" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1347404897705" expanded="true" signature="2542:2976" placeholder="..." />
+            <marker date="1347404897705" expanded="true" signature="2582:2969" placeholder="..." />
+            <marker date="1347404897705" expanded="true" signature="2594:2664" placeholder="..." />
+            <marker date="1347404897705" expanded="true" signature="2677:2958" placeholder="..." />
           </folding>
         </state>
       </provider>

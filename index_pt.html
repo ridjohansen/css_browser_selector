@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CSS Browser Selector + | Um Auxiliador no Desenvovimento Responsivo Cross-Browser</title>
+    <meta name="description" content="">
+    <meta name="viewport"
+          content="initial-scale=1.0, width=device-width, height=device-height, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> <!--(original)-->
+
+    <!-- Veja mais em: http://bootswatch.com/ -->
+    <!-- <link rel="stylesheet" href="http://bootswatch.com/amelia/bootstrap.min.css"> <!--(skin)-->
+    <!-- <link rel="stylesheet" href="http://bootswatch.com/cerulean/bootstrap.min.css"> <!--(skin)-->
+    <!-- -->
+    <link rel="stylesheet" href="http://bootswatch.com/cyborg/bootstrap.min.css">
+    <!--(skin)-->
+    <!-- <link rel="stylesheet" href="http://bootswatch.com/journal/bootstrap.min.css"> <!--(skin)-->
+    <!-- <link rel="stylesheet" href="http://bootswatch.com/readable/bootstrap.min.css"> <!--(skin)-->
+    <!-- <link rel="stylesheet" href="http://bootswatch.com/simplex/bootstrap.min.css"> <!--(skin)-->
+    <!-- <link rel="stylesheet" href="http://bootswatch.com/slate/bootstrap.min.css"> <!--(skin)-->
+    <!-- <link rel="stylesheet" href="http://bootswatch.com/spacelab/bootstrap.min.css"> <!--(skin)-->
+    <!-- <link rel="stylesheet" href="http://bootswatch.com/spruce/bootstrap.min.css"> <!--(skin)-->
+    <!-- <link rel="stylesheet" href="http://bootswatch.com/superhero/bootstrap.min.css"> <!--(skin)-->
+    <!-- <link rel="stylesheet" href="http://bootswatch.com/united/bootstrap.min.css"> <!--(skin)-->
+
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/bootstrap-responsive_lt-ie9.css">
+    <![endif]-->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+    <script src="js/vendor/css_browser_selector.js"></script>
+    <!-- <script src="js/vendor/css_browser_selector.min.js"></script> -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.1.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar">
+<!--[if lt IE 7]>
+<div class="container">
+    <div class="hero-unit chromeframe">
+        <p>
+            Você está usando um navegador desatualizado!
+        </p>
+
+        <p>
+            <a href="http://browsehappy.com/">Atualize seu navegador hoje</a>
+            &nbsp;ou&nbsp;
+            <a href="http://www.google.com/chromeframe/?redirect=true">instalação do Google Chrome Frame</a>
+            &nbsp;para melhor experimentar este site.
+        </p>
+    </div>
+</div>
+<![endif]-->
+
+<header class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">CSS Browser Selector +</a>
+
+            <nav class="nav-collapse collapse">
+                <ul class="nav">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Identifies">Identifies</a></li>
+                    <li><a href="#Recursos">Recursos</a></li>
+                    <li><a href="#Exemplo">Exemplo</a></li>
+                    <li><a href="#License">License</a></li>
+                    <li><a href="#Contribuidores">Contribuidores</a></li>
+                </ul>
+            </nav>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</header>
+
+<article class="container">
+
+<!-- Main hero unit for a primary marketing message or call to action -->
+<div class="hero-unit" id="Home">
+    <h1>CSS Browser Selector +</h1>
+
+    <h2>Um Auxiliador no Desenvovimento Responsivo Cross-Browser</h2>
+
+    <p>
+        CSS Browser Selector + é um javascript muito pequeno, que habilita seletores CSS.
+    </p>
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <ul class="unstyled">
+
+                <li class="span4">
+                    <h3 class="btn btn-block btn-large btn-primary">Melhor parte</h3>
+
+                    <p>chega de sujeira (hacks); todo o código compatível.</p>
+                </li>
+                <li class="span4">
+                    <h3 class="btn btn-block btn-large btn-primary">Auxiliador parecido com Media Queries (CSS3)</h3>
+
+                    <p>Método alternativo de Media Queries para o desenvolvimento de projeto ágil para navegadores mais antigos.</p>
+                </li>
+                <li class="span4">
+                    <h3 class="btn btn-block btn-large btn-primary">You can now write code for</h3>
+
+                    <p>navegador, versão do navegador, plataforma, versão de plataforma, dispositivo, versão do dispositivo, min-width e max-width de detecção de tela, detecção de orientação da tela (paisagem ou retrato).</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <p>
+        <strong>Mais Informações:</strong>
+        <br/>(http://rafael.adm.br/css_browser_selector)
+    </p>
+
+    <p>
+        <strong>Versões Experimentais:</strong>
+        <br/>(http://github.com/ridjohansen/css_browser_selector/)
+        <br/>(http://github.com/verbatim/css_browser_selector/)
+    </p>
+</div>
+
+<!-- Example row of columns -->
+<div class="row">
+<div class="span12">
+
+<h2 id="Identifies">Identifies</h2>
+<ul>
+    <li>Navegadores: Firefox; IE; Opera; Safari; Chrome, Konqueror, Iron</li>
+    <li>Versões dos navegadores: (most importantly: ie6, ie7, ie8, ie9)</li>
+    <li>Motores de renderização: Webkit; Mozilla; Gecko</li>
+    <li>Sistemas Operacionais/Plataformas: Mac; Win: Win8, Win7, Vista, WinXP, Win2k, WinNT; FreeBSD; Linux/x11</li>
+    <li>Dispositivos: Ipod; Ipad; Iphone; WebTV; Blackberry; Android; J2me; RIM Playbook; mobile (generico)</li>
+    <li>Tecnologia habilitada: JS (usado em conjunto com &lt;html class="no-js"&gt; para ainda ter mais controle)</li>
+    <li>detecção de max-width e min-width (Método alternativo de Media Queries para o detecçãode largura)</li>
+    <li>detecção da orientação navegador (Método alternativo de Media Queries para a detecçãode da orientação)</li>
+    <li>Detecção de idioma</li>
+</ul>
+
+<h4>Contribuidores recentes to 0.5, 0.6, 0.6.2:</h4>
+
+<ul>
+    <li>
+        <strong>melhorar e atualizar recursos para o desenvolvimento cross-browser</strong>
+        <br/>https://github.com/ridjohansen/css_browser_selector/
+    </li>
+    <li>
+        <strong>Detecção IE mais detalhada</strong>
+        <br/>https://github.com/kevingessner/css_browser_selector/
+    </li>
+    <li>
+        <strong>Detecção do Windows mais detalhada</strong>
+        <br/>https://github.com/saar/css_browser_selector
+    </li>
+
+    <li>
+        <strong>no-js para js:</strong>
+        <br/>http://paulirish.com/2009/avoiding-the-fouc-v3/
+    </li>
+
+    <li>
+        <strong>Detecção do Mac mais detalhada</strong>
+        <br/>https://github.com/haraldmartin/css_browser_selector
+    </li>
+</ul>
+
+<h4>Histórico de versões</h4>
+<ul>
+    <li>
+        <strong>v0.6.2 2012-09-10</strong>
+        <br/>adicionar novos recursos para o desenvolvimento cross-browser
+        <br/>atualizar a largura dispositivos comuns (com base em Bootstrap Twitter)
+        <br/>melhorar continuamente avalia navegador max-width e min-width (auxiliar para mediaqueries-como tela aulas de largura)
+        <br/>melhorar continuamente avalia orientação navegador (auxiliar para mediaqueries-como orientação classes)
+    </li>
+    <li>
+        <strong>v0.6.1 2012-03-14</strong>
+        <br/>iOS versão detecção
+        <br/>beta: detectar se está sendo executado em aplicativo para iPad.
+        <br/>(de: http://stackoverflow.com/questions/4460205/detect-ipad-iphone-webview-via-javascript)
+    </li>
+    <li>
+        <strong>v0.6.0 2012-01-24</strong>
+        <br/>apoio mais detalhada para o Opera, Chrome, Safari (e revisão no suporte ao Firefox)
+        <br/>versão para o Chrome, Blackberry, Android, Mac
+        <br/>detecção de dispositivos Android
+        <br/>alterado como 'mobile' é deterimed para ser adicionado à classe String
+        <br/>detecção de idioma
+        <br/>suporte ao RIM Playbook
+        <br/>avalia continuamente largura do navegador max (em caso de redimensionamento)
+        <br/>avalia continuamente orientação navegador (retrato ou paisagem)
+    </li>
+    <li>
+        <strong>v0.5.0 2011-08-24</strong>
+        <br/>qualquer versão do Firefox
+        <br/>mais versões do Windows (Win8 [provisória], Win2k Win7, Vista, XP,)
+        <br/>mais versões do IE em condições únicas
+        <br/>se "não-js" na aula de HTML: remove e substitui por "js" (&lt;html class="no-js"&gt;)
+    </li>
+</ul>
+
+<h2 id="Recursos">Recursos</h2>
+
+<ul>
+    <li>
+        <strong>navigator.userAgent strings:</strong>
+        <br/>http://en.wikipedia.org/wiki/User_agent
+        <br/>http://www.useragentstring.com/pages/useragentstring.php
+        <br/>http://www.user-agents.org
+        <br/>http://www.zytrax.com/tech/web/mobile_ids.html
+    </li>
+    <li>
+        <strong>história da userAgent string:</strong>
+        <br/>http://www.nczonline.net/blog/2010/01/12/history-of-the-user-agent-string/
+    </li>
+    <li>
+        <strong>lista de idiomas:</strong>
+        <br/>http://msdn.microsoft.com/en-us/library/ms533052%28v=vs.85%29.aspx
+    </li>
+    <li>
+        <strong>Lista dos windows nt</strong>
+        <br/>http://en.wikipedia.org/wiki/Windows_NT
+    </li>
+    <li>
+        <strong>interpretação do userAgent string do blackberry:</strong>
+        <br/>http://supportforums.blackberry.com/t5/Web-and-WebWorks-Development/How-to-detect-the-BlackBerry-Browser/ta-p/559862
+    </li>
+    <li>
+        <strong>compressão do javascript:</strong>
+        <br/>http://minifyjavascript.com
+    </li>
+    <li>
+        <strong>resoluções de tela</strong>
+        <br/>http://responsinator.com/
+    </li>
+    <li>
+        <strong>aspect ratio:</strong>
+        <br/>http://www.htmlgoodies.com/beyond/webmaster/toolbox/article.php/3889591/Detect-and-Set-the-iPhone--iPads-Viewport-Orientation-Using-JavaScript-CSS-and-Meta-Tags.htm
+    </li>
+    <li>
+        <strong>Detecção do iOS:</strong>
+        <br/>http://stackoverflow.com/questions/4460205/detect-ipad-iphone-webview-via-javascript
+    </li>
+</ul>
+
+<h4>Other Versions</h4>
+<ul>
+    <li>
+        <strong>Ruby on Rails Plugin por Reid MacDonald</strong>
+        <br/>http://latimes.rubyforge.org/svn/plugins/css_browser_selector/
+    </li>
+    <li>
+        <strong>PHP CSS Browser Selector por Bastian Allgeier</strong>
+        <br/>http://bastian-allgeier.de/css_browser_selector/
+    <li>
+        <strong>Wordpress Plugin por Adrian hanft</strong>
+        <br/>http://wordpress.org/extend/plugins/browser-specific-css/
+    </li>
+</ul>
+
+<h2 id="Exemplo">Exemplo</h2>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span4">
+            <h3 class="btn btn-block btn-large btn-primary">Navegador, dispositivo, sistema operacional e detecção de Javascript</h3>
+<pre>
+&lt;style&gt;
+.ie .exemplo { background-color: yellow; }
+.ie7 .exemplo { background-color: orange }
+.gecko .exemplo { background-color: gray; }
+.win.gecko .exemplo { background-color: red; }
+.linux.gecko .exemplo { background-color: pink; }
+.opera .exemplo { background-color: green; }
+.konqueror .exemplo { background-color: blue; }
+.webkit .exemplo { background-color: black; }
+.chrome .exemplo { background-color: cyan; }
+.exemplo { width: 100px; height: 100px; }
+.no-js, .no_js, .nojs { display: block; }
+.js { display: none; }
+&lt;/style&gt;
+</pre>
+        </div>
+        <div class="span4">
+            <h3 class="btn btn-block btn-large btn-primary">Media Queries (Largura da tela)</h3>
+<pre>
+&lt;style&gt;
+@media (max-width: 767px) {
+.exemplo {
+border: 2px solid purple!important;
+}
+}
+/* or */
+.minw_0 .exemplo, .maxw_767 .exemplo {
+border: 2px solid purple!important;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+.exemplo {
+border: 2px solid green!important;
+}
+}
+/* or */
+.minw_768.maxw_979 .exemplo {
+border: 2px solid green!important;
+}
+
+@media (min-width: 1200px) {
+.exemplo {
+border: 2px solid orange!important;
+}
+}
+/* or */
+.minw_1200 .exemplo {
+border: 2px solid orange!important;
+}
+&lt;/style&gt;
+</pre>
+        </div>
+        <div class="span4">
+            <h3 class="btn btn-block btn-large btn-primary">Media Queries (Orientação)</h3>
+<pre>
+&lt;style&gt;
+@media (orientation: landscape) {
+.exemplo {
+border: 2px solid red!important;
+}
+}
+/* or */
+.orientation_landscape .exemplo {
+border: 2px solid red!important;
+}
+
+@media (orientation: portrait) {
+.exemplo {
+border: 2px solid blue!important;
+}
+}
+/* or */
+.orientation_portrait .exemplo {
+border: 2px solid blue!important;
+}
+&lt;/style&gt;
+</pre>
+        </div>
+    </div>
+</div>
+
+
+<h2 id="License">Licença</h2>
+
+<p>http://creativecommons.org/licenses/by/2.5/</p>
+
+<h4>Autor original:</h4>
+
+<p>
+    <strong>Rafael Lima:</strong>
+    http://rafael.adm.br
+</p>
+
+<h4>Com base na idéia do site 37signals</h4>
+
+<p>http://37signals.com/svn/archives2/browser_selectors_in_css.php</p>
+
+<h2 id="Contribuidores">Contribuidores</h2>
+<ul>
+    <li>Richard Duchatsch Johansen @ridjohansen (http://github.com/ridjohansen)</li>
+    <li>Niyaz (http://github.com/niyazpk)</li>
+    <li>Marcio Trindade (http://github.com/marciotrindade)</li>
+    <li>rbottarelli (http://github.com/rbottarelli)</li>
+    <li>Bryan Chow (http://github.com/bryanchow)</li>
+    <li>Derek Lio (http://github.com/dereklio)</li>
+    <li>Paul Irish (http://github.com/paulirish)</li>
+    <li>Preston Badeer</li>
+    <li>Upekshapriya</li>
+    <li>André Lopes</li>
+    <li>Tazio Mirandola - copiaincolla pubblicità</li>
+    <li>Reid MacDonald (http://geminstallthat.wordpress.com)</li>
+    <li>Vinicius Braga (http://viniciusbraga.com)</li>
+    <li>Chris Preece (http://www.mmtdigital.co.uk)</li>
+    <li>Dominykas</li>
+    <li>M@ McCray</li>
+    <li>Daniel Westermann-Clark</li>
+    <li>Steve Clay (http://mrclay.org/)</li>
+    <li>Jeff Bellsey</li>
+    <li>Jean Pierre</li>
+    <li>Micah Snyder</li>
+    <li>Derek (http://amphibian.info)</li>
+    <li>Jesse Scott</li>
+    <li>Moises Kirsch (http://www.moiblog.com/)</li>
+    <li>Alex Wiltschko</li>
+    <li>Chris Warren and Tony Nelson (http://www.imagetrend.com)</li>
+    <li>glasser</li>
+</ul>
+</div>
+</div>
+
+</article>
+<!-- /container -->
+
+<hr class="container">
+
+<footer class="container">
+    <p>
+        Richard Duchatsch Johansen (ridjohansen)
+        | <a href="http://twitter.com/ridjohansen">Twitter</a>
+        | <a href="http://facebook.com/ridjohansen">Facebook</a>
+        | <a href="http://linkedin.com/in/ridjohansen">LinkedIn</a>
+        | <a href="http://slideshare.net/ridjohansen">Slideshare</a>
+        | <a href="http://klout.com/ridjohansen">Klout</a>
+    </p>
+</footer>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-34735780-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+</body>
+</html>
