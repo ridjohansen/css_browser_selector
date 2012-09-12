@@ -12,11 +12,17 @@
         <a href="http://ridjohansen.github.com/css_browser_selector/" target="_blank">http://ridjohansen.github.com/css_browser_selector/</a>
     </p>
 
-    <a href="https://github.com/ridjohansen/css_browser_selector/zipball/master" class="btn btn-block btn-large btn-success">
-        CSS Browser Selector Download
-    </a>
-
     <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <p>
+                    <a href="https://github.com/ridjohansen/css_browser_selector/zipball/master"
+                       class="btn btn-block btn-large btn-success">
+                        CSS Browser Selector Download
+                    </a>
+                </p>
+            </div>
+        </div>
         <div class="row-fluid">
             <ul class="unstyled">
 
