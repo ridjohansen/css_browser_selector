@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3e50755-fba6-452e-a9ea-8bdac5d5806e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index_en.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index_pt.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
@@ -37,13 +39,36 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="440" column="10" selection-start="15360" selection-end="15360" vertical-scroll-proportion="0.8985075">
+            <state line="98" column="34" selection-start="4015" selection-end="4015" vertical-scroll-proportion="0.15178572">
               <folding>
-                <marker date="1347403274449" expanded="true" signature="2566:3000" placeholder="..." />
-                <marker date="1347403274449" expanded="true" signature="2606:2993" placeholder="..." />
-                <marker date="1347403274449" expanded="true" signature="2618:2688" placeholder="..." />
-                <marker date="1347403274449" expanded="true" signature="2701:2982" placeholder="..." />
+                <marker date="1347404897705" expanded="true" signature="2542:2976" placeholder="..." />
+                <marker date="1347404897705" expanded="true" signature="2582:2969" placeholder="..." />
+                <marker date="1347404897705" expanded="true" signature="2594:2664" placeholder="..." />
+                <marker date="1347404897705" expanded="true" signature="2677:2958" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_pt.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index_pt.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="179" column="5" selection-start="7495" selection-end="7495" vertical-scroll-proportion="-7.355263">
+              <folding>
+                <marker date="1347409352367" expanded="true" signature="2582:3016" placeholder="..." />
+                <marker date="1347409352367" expanded="true" signature="2622:3009" placeholder="..." />
+                <marker date="1347409352367" expanded="true" signature="2634:2704" placeholder="..." />
+                <marker date="1347409352367" expanded="true" signature="2717:2998" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_en.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index_en.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="17" selection-start="2543" selection-end="2543" vertical-scroll-proportion="20.578947">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,6 +99,8 @@
         <option value="$PROJECT_DIR$/css_browser_selector.min.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/index_pt.html" />
+        <option value="$PROJECT_DIR$/index_en.html" />
       </list>
     </option>
   </component>
@@ -234,7 +261,11 @@
       <created>1347402837920</created>
       <updated>1347402837920</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Google Analytics">
+      <created>1347403279759</created>
+      <updated>1347403279759</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -263,11 +294,11 @@
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32715008" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32546374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288364" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288364" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25872535" sideWeight="0.6728499" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26403642" sideWeight="0.6745362" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -426,14 +457,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index_pt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="179" column="5" selection-start="7495" selection-end="7495" vertical-scroll-proportion="-7.355263">
+          <folding>
+            <marker date="1347409352367" expanded="true" signature="2582:3016" placeholder="..." />
+            <marker date="1347409352367" expanded="true" signature="2622:3009" placeholder="..." />
+            <marker date="1347409352367" expanded="true" signature="2634:2704" placeholder="..." />
+            <marker date="1347409352367" expanded="true" signature="2717:2998" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="17" selection-start="2543" selection-end="2543" vertical-scroll-proportion="20.578947">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="440" column="10" selection-start="15360" selection-end="15360" vertical-scroll-proportion="0.8985075">
+        <state line="98" column="34" selection-start="4015" selection-end="4015" vertical-scroll-proportion="0.15178572">
           <folding>
-            <marker date="1347403274449" expanded="true" signature="2566:3000" placeholder="..." />
-            <marker date="1347403274449" expanded="true" signature="2606:2993" placeholder="..." />
-            <marker date="1347403274449" expanded="true" signature="2618:2688" placeholder="..." />
-            <marker date="1347403274449" expanded="true" signature="2701:2982" placeholder="..." />
+            <marker date="1347404897705" expanded="true" signature="2542:2976" placeholder="..." />
+            <marker date="1347404897705" expanded="true" signature="2582:2969" placeholder="..." />
+            <marker date="1347404897705" expanded="true" signature="2594:2664" placeholder="..." />
+            <marker date="1347404897705" expanded="true" signature="2677:2958" placeholder="..." />
           </folding>
         </state>
       </provider>
