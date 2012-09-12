@@ -7,9 +7,14 @@
     <p>
         CSS Browser Selector + is a very small javascript which empowers CSS selectors.
     </p>
+
     <p>
         <a href="http://ridjohansen.github.com/css_browser_selector/" target="_blank">http://ridjohansen.github.com/css_browser_selector/</a>
     </p>
+
+    <a href="https://github.com/ridjohansen/css_browser_selector/zipball/master" class="btn btn-block btn-large btn-success">
+        CSS Browser Selector Download
+    </a>
 
     <div class="container-fluid">
         <div class="row-fluid">
@@ -18,18 +23,30 @@
                 <li class="span4">
                     <h3 class="btn btn-block btn-large btn-primary">Best part</h3>
 
-                    <p>no more hacks; all compliant code.</p>
+                    <ul>
+                        <li>no more hacks</li>
+                        <li>all compliant code</li>
+                    </ul>
                 </li>
                 <li class="span4">
-                    <h3 class="btn btn-block btn-large btn-primary">Cross-browser Mediaqueries-like helper</h3>
+                    <h3 class="btn btn-block btn-large btn-primary">Cross-browser Media Queries like helper</h3>
 
                     <p>Alternative method of mediaqueries for developing responsive design for older browsers.</p>
                 </li>
                 <li class="span4">
                     <h3 class="btn btn-block btn-large btn-primary">You can now write code for</h3>
 
-                    <p>browser, browser version, platform, platform version, device, device version, min-width and
-                        max-width screen detection, orientation screen detection (landscape or portrait).</p>
+                    <ul>
+                        <li>browser</li>
+                        <li>browser version</li>
+                        <li>platform</li>
+                        <li>platform version</li>
+                        <li>device</li>
+                        <li>device version</li>
+                        <li>min-width and</li>
+                        <li>max-width screen detection</li>
+                        <li>orientation screen detection (landscape or portrait).</li>
+                    </ul>
                 </li>
             </ul>
         </div>

@@ -76,7 +76,7 @@
             <nav class="nav-collapse collapse">
                 <ul class="nav">
                     <li><a href="#Home">Home</a></li>
-                    <li><a href="#Identifies">Identifies</a></li>
+                    <li><a href="#Identifies">Ele identifica</a></li>
                     <li><a href="#Recursos">Recursos</a></li>
                     <li><a href="#Exemplo">Exemplo</a></li>
                     <li><a href="#License">License</a></li>
@@ -100,6 +100,10 @@
         CSS Browser Selector + é um javascript muito pequeno, que habilita seletores CSS.
     </p>
 
+    <a href="https://github.com/ridjohansen/css_browser_selector/zipball/master" class="btn btn-block btn-large btn-success">
+        CSS Browser Selector Download
+    </a>
+
     <div class="container-fluid">
         <div class="row-fluid">
             <ul class="unstyled">
@@ -107,7 +111,10 @@
                 <li class="span4">
                     <h3 class="btn btn-block btn-large btn-primary">Melhor parte</h3>
 
-                    <p>chega de sujeira (hacks); todo o código compatível.</p>
+                    <ul>
+                        <li>chega de sujeira (hacks)</li>
+                        <li>todo o código compatível.</li>
+                    </ul>
                 </li>
                 <li class="span4">
                     <h3 class="btn btn-block btn-large btn-primary">Auxiliador parecido com Media Queries (CSS3)</h3>
@@ -115,9 +122,18 @@
                     <p>Método alternativo de Media Queries para o desenvolvimento de projeto ágil para navegadores mais antigos.</p>
                 </li>
                 <li class="span4">
-                    <h3 class="btn btn-block btn-large btn-primary">You can now write code for</h3>
+                    <h3 class="btn btn-block btn-large btn-primary">Agora você pode escrever código para</h3>
 
-                    <p>navegador, versão do navegador, plataforma, versão de plataforma, dispositivo, versão do dispositivo, min-width e max-width de detecção de tela, detecção de orientação da tela (paisagem ou retrato).</p>
+                    <ul>
+                        <li>navegador</li>
+                        <li>versão do navegador</li>
+                        <li>plataforma</li>
+                        <li>versão de plataforma</li>
+                        <li>dispositivos</li>
+                        <li>versão do dispositivo</li>
+                        <li>min-width e max-width</li>
+                        <li>detecção de orientação da tela (paisagem ou retrato)</li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -139,7 +155,7 @@
 <div class="row">
 <div class="span12">
 
-<h2 id="Identifies">Identifies</h2>
+<h2 id="Identifies">Ele identifica</h2>
 <ul>
     <li>Navegadores: Firefox; IE; Opera; Safari; Chrome, Konqueror, Iron</li>
     <li>Versões dos navegadores: (most importantly: ie6, ie7, ie8, ie9)</li>
@@ -185,7 +201,8 @@
         <strong>v0.6.2 2012-09-10</strong>
         <br/>adicionar novos recursos para o desenvolvimento cross-browser
         <br/>atualizar a largura dispositivos comuns (com base em Bootstrap Twitter)
-        <br/>melhorar continuamente avalia navegador max-width e min-width (auxiliar para mediaqueries-como tela aulas de largura)
+        <br/>melhorar continuamente avalia navegador max-width e min-width (auxiliar para mediaqueries-como tela aulas
+        de largura)
         <br/>melhorar continuamente avalia orientação navegador (auxiliar para mediaqueries-como orientação classes)
     </li>
     <li>
@@ -278,7 +295,8 @@
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span4">
-            <h3 class="btn btn-block btn-large btn-primary">Navegador, dispositivo, sistema operacional e detecção de Javascript</h3>
+            <h3 class="btn btn-block btn-large btn-primary">Navegador, dispositivo, sistema operacional e detecção de
+                Javascript</h3>
 <pre>
 &lt;style&gt;
 .ie .exemplo { background-color: yellow; }
@@ -431,10 +449,13 @@ border: 2px solid blue!important;
     _gaq.push(['_setAccount', 'UA-34735780-1']);
     _gaq.push(['_trackPageview']);
 
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
     })();
 </script>
 </body>
