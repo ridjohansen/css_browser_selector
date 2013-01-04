@@ -1,5 +1,5 @@
 /*
- CSS Browser Selector 0.6.2
+ CSS Browser Selector 0.7
  Originally written by Rafael Lima (http://rafael.adm.br)
  http://rafael.adm.br/css_browser_selector
  License: http://creativecommons.org/licenses/by/2.5/
@@ -19,7 +19,7 @@ function log(m) {
 
 function css_browser_selector(u) {
     var uaInfo = {},
-        screens = [0, 481, 768, 980, 1200],
+        screens = [0, 768, 980, 1200],
         allScreens = screens.length,
         ua = u.toLowerCase(),
         is = function (t) {
@@ -117,10 +117,10 @@ function css_browser_selector(u) {
             (is('ipad|iphone|ipod') && !is('safari')) ? 'ipad_app' : ''
 
 
-        ]; // b
+        ];
 
     function screenSize() {
-        var w = (window.outerWidth || html.clientWidth) - 32;
+        var w = (window.outerWidth || html.clientWidth) - 34;
         var h = window.outerHeight || html.clientHeight;
         var full = 9999;
         uaInfo.orientation = ((w < h) ? "portrait" : "landscape");
@@ -132,7 +132,7 @@ function css_browser_selector(u) {
 
                 uaInfo.minw = screens[(i)];
 
-                if (i <= 3) {
+                if (i <= 2) {
                     uaInfo.maxw = screens[(i) + 1] - 1;
                 } else {
                     uaInfo.maxw = full;
@@ -152,6 +152,43 @@ function css_browser_selector(u) {
 
     window.onresize = screenSize;
     screenSize();
+
+
+    // dataURI Selector - Início
+    var data = new Image();
+    data.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+    var div = document.createElement("div");
+    div.innerHTML = "<!--[if lt IE 9]><i></i><![endif]-->";
+    var isIeLessThan9 = (div.getElementsByTagName("i").length == 1);
+    data.onload = data.onerror = function(){
+        if(this.width != 1 || this.height != 1 || isIeLessThan9) {
+            document.getElementsByTagName('html')[0].className += " no-datauri";
+        }
+        else {
+            document.getElementsByTagName('html')[0].className += " datauri";
+        }
+    }
+    // dataURI Selector - Fim
+
+
+    // hidpi Selector - Início
+    function getDevicePixelRatio() {
+        if(window.devicePixelRatio === undefined) return 1; // No pixel ratio available. Assume 1:1.
+        return window.devicePixelRatio;
+    }
+    if (getDevicePixelRatio() > 1) {
+        document.getElementsByTagName('html')[0].className += ' hidpi';
+    }
+    else {
+        document.getElementsByTagName('html')[0].className += ' no-hidpi';
+    }
+    if (getDevicePixelRatio() > 1 && getDevicePixelRatio() < 2) {
+        document.getElementsByTagName('html')[0].className += ' retina_1x';
+    } else if (getDevicePixelRatio() >= 2) {
+        document.getElementsByTagName('html')[0].className += ' retina_2x';
+    }
+    // hidpi Selector - Fim
+
 
     var cssbs = (b.join(' ')) + " js ";
     html.className = (cssbs + html.className.replace(/\b(no[-|_]?)?js\b/g, "")).replace(/^ /, "").replace(/ +/g, " ");
