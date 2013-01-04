@@ -92,7 +92,28 @@
 
 <!-- Main hero unit for a primary marketing message or call to action -->
 <div class="hero-unit" id="Home">
-    <h1>CSS Browser Selector +</h1>
+        <h1>CSS Browser Selector +</h1>
+        
+        <style>
+            .test {
+                display: none;
+            }
+            .hidpi .ret { display: block!important; }
+            .retina_1x .ret_1x { display: block!important; }
+            .retina_2x .ret_2x { display: block!important; }
+        </style>
+        
+        <p>
+        <span class="test ret">
+            Hi-dpi screen
+        </span>
+        <span class="test ret_15">
+            Pixel-ratio > 1 and < 2
+        </span>
+        <span class="test ret_20">
+            Pixel-ratio >= 2
+        </span>
+        </p>
 
     <h2>Um Auxiliador no Desenvovimento Responsivo Cross-Browser</h2>
 
