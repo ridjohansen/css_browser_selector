@@ -1,4 +1,3 @@
-
 <!-- Main hero unit for a primary marketing message or call to action -->
 <div class="hero-unit" id="Home">
     <h1>CSS Browser Selector +</h1>
@@ -121,6 +120,12 @@
 
 <h4>Version History</h4>
 <ul>
+    <li>
+        <strong>v0.7 2013-04-01</strong>
+        <br/>Add support to Hi-dpi displays Selector
+        <br/>Add Pixel Ratio support for 1.5 and 2
+        <br/>Add support to dataURI's Selector
+    </li>
     <li>
         <strong>v0.6.2 2012-09-10</strong>
         <br/>add new features for cross-browser development
