@@ -251,17 +251,48 @@
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEUAAAD///+l2Z/dAAAAM0lEQVR4nGP4/5/h/1+G/58ZDrAz3D/McH8yw83NDDeNGe4Ug9C9zwz3gVLMDA/A6P9/AFGGFyjOXZtQAAAAAElFTkSuQmCC');
 }
 .no-datauri .example_bg {
-    background-image: url('elephant.png');
+    background-image: url('bg_default.png');
 }
-
 .datauri .img_default, .no-datauri .img_uri {
     display: none !important;
 }
 &lt;/style&gt;
 
 &lt;div class="example_bg"&gt;
-&lt;img class="img_uri" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEUAAAD///+l2Z/dAAAAM0lEQVR4nGP4/5/h/1+G/58ZDrAz3D/McH8yw83NDDeNGe4Ug9C9zwz3gVLMDA/A6P9/AFGGFyjOXZtQAAAAAElFTkSuQmCC" alt="with dataURI" /&gt; 
-&lt;img class="img_default" src="elephant.png" alt="without dataURI" /&gt; 
+  &lt;img class="img_uri" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEUAAAD///+l2Z/dAAAAM0lEQVR4nGP4/5/h/1+G/58ZDrAz3D/McH8yw83NDDeNGe4Ug9C9zwz3gVLMDA/A6P9/AFGGFyjOXZtQAAAAAElFTkSuQmCC" alt="with dataURI" /&gt; 
+  &lt;img class="img_default" src="img_default.png" alt="without dataURI" /&gt; 
+&lt;/div&gt;
+</pre>
+        </div>
+        
+        <div class="span4">
+            <h3 class="btn btn-block btn-large btn-primary">Hi-dpi and Pixel-Ratio Selector</h3>
+<pre>
+&lt;style&gt;
+.retina_1x .example_bg {
+    background-image: url('bg_hidpi_1x.png');
+}
+.retina_2x .example_bg {
+    background-image: url('bg_hidpi_2x.png');
+}
+.no-hidpi .example_bg {
+    background-image: url('bg_default.png');
+}
+.hidpi .img_default, .no-hidpi .img_hidpi {
+    display: none !important;
+}
+.retina_2x .img_default, .retina_2x .x1 {
+    display: none !important;
+}
+.retina_1x .img_default, .retina_1x .x2 {
+    display: none !important;
+}
+&lt;/style&gt;
+
+&lt;div class="example_bg"&gt;
+    &lt;img class="img_hidpi x2" src="img_hidpi_2x.png" alt="with pixel-ratio &gt;= 2" /&gt;
+    &lt;img class="img_hidpi x1" src="img_hidpi_1x.png" alt="with pixel-ratio &gt; 1 and &lt; 2" /&gt; 
+    &lt;img class="img_default" src="img_default.png" alt="with pixel-ratio 1 or default" /&gt; 
 &lt;/div&gt;
 </pre>
         </div>
