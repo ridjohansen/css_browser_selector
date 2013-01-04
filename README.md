@@ -13,7 +13,7 @@
 
     <h4>See an example:</h4>
 <pre>
-&lt;html lang="pt-br" class="webkit chrome chrome21 win win8 js orientation_landscape minw_980 maxw_1199"&gt;
+&lt;html lang="pt-br" class="webkit chrome chrome25 win win8 js orientation_landscape minw_980 maxw_1199 no-hidpi datauri"&gt;
 </pre>
 
     <div class="container-fluid">
@@ -269,11 +269,8 @@
             <h3 class="btn btn-block btn-large btn-primary">Hi-dpi and Pixel-Ratio Selector</h3>
 <pre>
 &lt;style&gt;
-.retina_1x .example_bg {
-    background-image: url('bg_hidpi_1x.png');
-}
-.retina_2x .example_bg {
-    background-image: url('bg_hidpi_2x.png');
+.img_hidpi {
+    display: none;
 }
 .no-hidpi .example_bg {
     background-image: url('bg_default.png');
@@ -281,11 +278,47 @@
 .hidpi .img_default, .no-hidpi .img_hidpi {
     display: none !important;
 }
+.retina_1x .example_bg {
+    background-image: url('bg_hidpi_1x.png');
+}
+.retina_2x .example_bg {
+    background-image: url('bg_hidpi_2x.png');
+}
 .retina_2x .img_default, .retina_2x .x1 {
     display: none !important;
 }
 .retina_1x .img_default, .retina_1x .x2 {
     display: none !important;
+}
+
+or /* http://bjango.com/articles/min-device-pixel-ratio/ */
+
+@media 
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+    .example_bg {
+        background-image: url('bg_hidpi_1x.png');
+    }
+    .img_default, .x2 {
+        display: none;
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .example_bg {
+        background-image: url('bg_hidpi_2x.png');
+    }
+    .img_default, .x1 {
+        display: none;
+    }
 }
 &lt;/style&gt;
 
