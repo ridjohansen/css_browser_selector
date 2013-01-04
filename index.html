@@ -8,7 +8,7 @@
     <meta name="description"
           content="CSS Browser Selector + é um javascript muito pequeno, que habilita seletores CSS. Um Auxiliador no Desenvolvimento Responsivo Cross-Browser">
     <meta name="viewport"
-          content="initial-scale=1.0, width=device-width, height=device-height, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+          content="initial-scale=1.0, width=device-width, minimum-scale=1.0, user-scalable=no">
 
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> <!--(original)-->
 
@@ -77,6 +77,27 @@
     <!-- Main hero unit for a primary marketing message or call to action -->
     <div class="hero-unit" id="Home">
         <h1>CSS Browser Selector +</h1>
+        
+        <style>
+            .test {
+                display: none;
+            }
+            .hidpi .ret { display: block!important; }
+            .retina_1x .ret_1x { display: block!important; }
+            .retina_2x .ret_2x { display: block!important; }
+        </style>
+        
+        <p>
+        <span class="test ret">
+            Hi-dpi screen
+        </span>
+        <span class="test ret_15">
+            Pixel-ratio > 1 and < 2
+        </span>
+        <span class="test ret_20">
+            Pixel-ratio >= 2
+        </span>
+        </p>
 
         <h2 lang="pt-br">
             <strong lang="pt-br">Um Auxiliador no Desenvolvimento Responsivo Cross-Browser</strong><br/>
