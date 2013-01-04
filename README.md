@@ -91,7 +91,7 @@
     <li>language detection</li>
 </ul>
 
-<h4>Recent contributors to 0.5, 0.6, 0.6.2:</h4>
+<h4>Recent contributors to 0.5, 0.6, 0.7:</h4>
 
 <ul>
     <li>
@@ -242,6 +242,30 @@
 &lt;/style&gt;
 </pre>
         </div>
+        
+        <div class="span4">
+            <h3 class="btn btn-block btn-large btn-primary">dataURI Selector</h3>
+<pre>
+&lt;style&gt;
+.datauri .example_bg {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEUAAAD///+l2Z/dAAAAM0lEQVR4nGP4/5/h/1+G/58ZDrAz3D/McH8yw83NDDeNGe4Ug9C9zwz3gVLMDA/A6P9/AFGGFyjOXZtQAAAAAElFTkSuQmCC');
+}
+.no-datauri .example_bg {
+    background-image: url('elephant.png');
+}
+
+.datauri .img_default, .no-datauri .img_uri {
+    display: none !important;
+}
+&lt;/style&gt;
+
+&lt;body class="example_bg"&gt;
+&lt;img&gt; class="img_uri" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEUAAAD///+l2Z/dAAAAM0lEQVR4nGP4/5/h/1+G/58ZDrAz3D/McH8yw83NDDeNGe4Ug9C9zwz3gVLMDA/A6P9/AFGGFyjOXZtQAAAAAElFTkSuQmCC" alt="with dataURI" /&gt; 
+&lt;img&gt; class="img_default" src="elephant.png" alt="without dataURI" /&gt; 
+&lt;/body&gt;
+</pre>
+        </div>
+
         <div class="span4">
             <h3 class="btn btn-block btn-large btn-primary">Media Queries (Screen Width)</h3>
 <pre>
