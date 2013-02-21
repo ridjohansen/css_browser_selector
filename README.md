@@ -62,6 +62,7 @@
                     <h3 class="btn btn-block btn-large btn-primary">Optional namespace</h3>
 
                     <p>Add a name space like 'ns-webkit' to all class names by defining 'var css_browser_selector_ns = "ns-";' before loading script. </p>
+
                 </li>
             </ul>
         </div>
