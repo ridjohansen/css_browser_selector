@@ -17,7 +17,7 @@ function log(m) {
     }
 }
 
-function css_browser_selector(u) {
+function css_browser_selector(u, ns) {
     var uaInfo = {},
         screens = [0, 768, 980, 1200],
         allScreens = screens.length,
@@ -189,11 +189,37 @@ function css_browser_selector(u) {
     }
     // hidpi Selector - Fim
 
-
-    var cssbs = (b.join(' ')) + " js ";
+    // push js
+    b.push('js');
+    
+    // add optional namespace. for example "mynamespace-js". this could help with namespace collisions
+    ns = ns === undefined ? "" : ns;
+    var i = 0;
+    if (ns === ""){
+        for (i; i < b.length; i++) {
+            b[i] = ns + b[i];
+        }
+    }else{
+        for (i; i < b.length; i++) {
+            var bs = b[i].split(" ");
+            b[i] = " ";
+            for (var j = 0; j < bs.length; j++) {
+                if (bs[i] !== undefined && bs[i].length > 0 && bs[i] !== ' '){
+                    b[i] = ns + bs[j] + " " + b[i];
+                }
+            }
+        
+        }
+    }
+    
+    var cssbs = (b.join(' '));
     html.className = (cssbs + html.className.replace(/\b(no[-|_]?)?js\b/g, "")).replace(/^ /, "").replace(/ +/g, " ");
 
     return cssbs;
 }
 
-css_browser_selector(navigator.userAgent);
+// define css_browser_selector_ns before loading this script to assign a namespace
+var css_browser_selector_ns = css_browser_selector_ns || "";
+
+// init
+css_browser_selector(navigator.userAgent, css_browser_selector_ns);
