@@ -24,6 +24,9 @@
 	var r = document.getElementById('r');
 	r.innerHTML = document.documentElement.className;
 
+	window.addEventListener('resize',  function(){
+		r.innerHTML = document.documentElement.className;
+	});
 	window.addEventListener('deviceorientation',  function(){
 		r.innerHTML = document.documentElement.className;
 	});

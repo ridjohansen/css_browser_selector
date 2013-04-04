@@ -143,12 +143,36 @@ var screenInfo = {
 			pixelRatio = window.devicePixelRatio ? window.devicePixelRatio : 1;
 
 		arr.push(pixelRatio > 1 ? 'hidpi' : 'no-hidpi');
-		arr.push('retina_' + parseInt(pixelRatio) + 'x');
 
+		if(pixelRatio > 1) {
+			arr.push('retina_' + parseInt(pixelRatio) + 'x');
+		}
 		return arr;
 	}
 }
 
+var dataUriInfo = {
+	data : new Image(),
+	div : document.createElement("div"),
+	isIeLessThan9 : false,
+	getImg : function() {
+
+		dataUriInfo.data.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+		dataUriInfo.div.innerHTML = "<!--[if lt IE 9]><i></i><![endif]-->";
+		dataUriInfo.isIeLessThan9 = dataUriInfo.div.getElementsByTagName("i").length == 1;
+
+		return dataUriInfo.data;
+	},
+	checkSupport : function() {
+		if(dataUriInfo.data.width != 1 || dataUriInfo.data.height != 1 || dataUriInfo.isIeLessThan9) {
+			return ["no-datauri"];
+		}
+		else {
+			return ["datauri"];
+		}
+	}
+
+}
 
 function css_browser_selector(u, ns) {
 	var html = document.documentElement,
@@ -156,7 +180,7 @@ function css_browser_selector(u, ns) {
 		ns = ns ? ns : "";
 
 	/* js */
-	b.push('js');
+	b = b.concat(['js']);
 
 	/* ua */
 	uaInfo.ua = u.toLowerCase();
@@ -180,22 +204,11 @@ function css_browser_selector(u, ns) {
 	window.addEventListener('resize', updateScreen);
 	window.addEventListener('orientationchange', updateScreen);
 
-
-	// dataURI Selector - Início
-	var data = new Image();
-	data.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
-	var div = document.createElement("div");
-	div.innerHTML = "<!--[if lt IE 9]><i></i><![endif]-->";
-	var isIeLessThan9 = (div.getElementsByTagName("i").length == 1);
+	/* dataURI */
+	var data = dataUriInfo.getImg();
 	data.onload = data.onerror = function(){
-		if(this.width != 1 || this.height != 1 || isIeLessThan9) {
-			document.getElementsByTagName('html')[0].className += " no-datauri";
-		}
-		else {
-			document.getElementsByTagName('html')[0].className += " datauri";
-		}
+		html.className += ' ' + dataUriInfo.checkSupport().join(' ');
 	}
-	// dataURI Selector - Fim
 
 
 	/* removendo itens invalidos do array */
@@ -203,12 +216,10 @@ function css_browser_selector(u, ns) {
 		return e;
 	});
 
-	console.log(b);
-	
-	var cssbs = b.join(' ' + ns);
-	html.className = (cssbs + html.className.replace(/\b(no[-|_]?)?js\b/g, "")).replace(/^ /, "").replace(/ +/g, " ");
-
-	return cssbs;
+	/* prefixo do namespace */
+	b[0] = ns ? ns + b[0] : b[0];
+	html.className = b.join(' ' + ns);
+	return html.className;
 }
 
 // define css_browser_selector_ns before loading this script to assign a namespace
