@@ -9,213 +9,211 @@
  https://github.com/ridjohansen/css_browser_selector
 
  */
-showLog = true;
+var uaInfo = {
+	ua : '',
+	is : function (t) {
+		return RegExp(t, "i").test(uaInfo.ua);
+	},
+	version : function (p, n) {
+		n = n.replace(".", "_");
+		var i = n.indexOf('_'),
+			ver = "";
+		while (i > 0) {
+			ver += " " + p + n.substring(0, i);
+			i = n.indexOf('_', i + 1);
+		}
+		ver += " " + p + n;
+		return ver;
+	},
+	getBrowser : function() {
+		var g = 'gecko',
+			w = 'webkit',
+			c = 'chrome',
+			f = 'firefox',
+			s = 'safari',
+			o = 'opera',
+			a = 'android',
+			bb = 'blackberry',
+			dv = 'device_',
 
-function log(m) {
-    if (window.console && showLog) {
-        console.log(m);
-    }
+			ua = uaInfo.ua,
+			is = uaInfo.is;
+
+		return [
+			(!(/opera|webtv/i.test(ua)) && /msie\s(\d+)/.test(ua)) ? ('ie ie' + (/trident\/4\.0/.test(ua) ? '8' : RegExp.$1))
+				:is('firefox/') ? g + " " + f + (/firefox\/((\d+)(\.(\d+))(\.\d+)*)/.test(ua) ? ' ' + f + RegExp.$2 + ' ' + f + RegExp.$2 + "_" + RegExp.$4 : '')
+				:is('gecko/') ? g
+				:is('opera') ? o + (/version\/((\d+)(\.(\d+))(\.\d+)*)/.test(ua) ? ' ' + o + RegExp.$2 + ' ' + o + RegExp.$2 + "_" + RegExp.$4 : (/opera(\s|\/)(\d+)\.(\d+)/.test(ua) ? ' ' + o + RegExp.$2 + " " + o + RegExp.$2 + "_" + RegExp.$3 : ''))
+				:is('konqueror') ? 'konqueror'
+				:is('blackberry') ? (bb + (/Version\/(\d+)(\.(\d+)+)/i.test(ua) ? " " + bb + RegExp.$1 + " " + bb + RegExp.$1 + RegExp.$2.replace('.', '_') : (/Blackberry ?(([0-9]+)([a-z]?))[\/|;]/gi.test(ua) ? ' ' + bb + RegExp.$2 + (RegExp.$3 ? ' ' + bb + RegExp.$2 + RegExp.$3 : '') : ''))) // blackberry
+				:is('android') ? (a + (/Version\/(\d+)(\.(\d+))+/i.test(ua) ? " " + a + RegExp.$1 + " " + a + RegExp.$1 + RegExp.$2.replace('.', '_') : '') + (/Android (.+); (.+) Build/i.test(ua) ? ' ' + dv + ((RegExp.$2).replace(/ /g, "_")).replace(/-/g, "_") : '')) //android
+				:is('chrome') ? w + ' ' + c + (/chrome\/((\d+)(\.(\d+))(\.\d+)*)/.test(ua) ? ' ' + c + RegExp.$2 + ((RegExp.$4 > 0) ? ' ' + c + RegExp.$2 + "_" + RegExp.$4 : '') : '')
+				:is('iron') ? w + ' iron'
+				:is('applewebkit/') ? (w + ' ' + s + (/version\/((\d+)(\.(\d+))(\.\d+)*)/.test(ua) ? ' ' + s + RegExp.$2 + " " + s + RegExp.$2 + RegExp.$3.replace('.', '_') : (/ Safari\/(\d+)/i.test(ua) ? ((RegExp.$1 == "419" || RegExp.$1 == "417" || RegExp.$1 == "416" || RegExp.$1 == "412") ? ' ' + s + '2_0' : RegExp.$1 == "312" ? ' ' + s + '1_3' : RegExp.$1 == "125" ? ' ' + s + '1_2' : RegExp.$1 == "85" ? ' ' + s + '1_0' : '') : ''))) //applewebkit
+				:is('mozilla/') ? g : ''
+		];
+	},
+	getPlatform : function() {
+		var ua = uaInfo.ua,
+			version = uaInfo.version,
+			is = uaInfo.is;
+
+		return [
+			is('j2me') ? 'j2me'
+			:is('ipad|ipod|iphone') ? (
+			(/CPU( iPhone)? OS (\d+[_|\.]\d+([_|\.]\d+)*)/i.test(ua) ? 'ios' + version('ios', RegExp.$2) : '') + ' ' + (/(ip(ad|od|hone))/gi.test(ua) ? RegExp.$1 : "")) //'iphone'
+			//:is('ipod')?'ipod'
+			//:is('ipad')?'ipad'
+			:is('playbook') ? 'playbook'
+			:is('kindle|silk') ? 'kindle'
+			:is('playbook') ? 'playbook'
+			:is('mac') ? 'mac' + (/mac os x ((\d+)[.|_](\d+))/.test(ua) ? (' mac' + (RegExp.$2) + ' mac' + (RegExp.$1).replace('.', "_")) : '')
+			:is('win') ? 'win' + (is('windows nt 6.2') ? ' win8'
+			:is('windows nt 6.1') ? ' win7'
+			:is('windows nt 6.0') ? ' vista'
+			:is('windows nt 5.2') || is('windows nt 5.1') ? ' win_xp'
+			:is('windows nt 5.0') ? ' win_2k'
+			:is('windows nt 4.0') || is('WinNT4.0') ? ' win_nt' : '')
+			:is('freebsd') ? 'freebsd'
+			:is('x11|linux') ? 'linux' : ''
+		];
+	},
+	getMobile : function() {
+		var is = uaInfo.is;
+		return [
+			is("android|mobi|mobile|j2me|iphone|ipod|ipad|blackberry|playbook|kindle|silk") ? 'mobile' : ''
+		];
+	},
+	getIpadApp : function() {
+		var is = uaInfo.is;
+		return [
+			(is('ipad|iphone|ipod') && !is('safari')) ? 'ipad_app' : ''
+		];
+	},
+	getLang : function() {
+		var ua = uaInfo.ua;
+
+		return [
+			/[; |\[](([a-z]{2})(\-[a-z]{2})?)[)|;|\]]/i.test(ua) ? ('lang_' + RegExp.$2).replace("-", "_") + (RegExp.$3 != '' ? (' ' + 'lang_' + RegExp.$1).replace("-", "_") : '') : ''
+		];
+	}
 }
-
 function css_browser_selector(u, ns) {
-    var uaInfo = {},
-        screens = [0, 768, 980, 1200],
-        allScreens = screens.length,
-        ua = u.toLowerCase(),
-        is = function (t) {
-            return RegExp(t, "i").test(ua);
-        },
-        version = function (p, n) {
-            n = n.replace(".", "_");
-            var i = n.indexOf('_'),
-                ver = "";
-            while (i > 0) {
-                ver += " " + p + n.substring(0, i);
-                i = n.indexOf('_', i + 1);
-            }
-            ver += " " + p + n;
-            return ver;
-        },
-        g = 'gecko',
-        w = 'webkit',
-        c = 'chrome',
-        f = 'firefox',
-        s = 'safari',
-        o = 'opera',
-        m = 'mobile',
-        a = 'android',
-        bb = 'blackberry',
-        lang = 'lang_',
-        dv = 'device_',
-        html = document.documentElement,
-        b = [
+	var uaInfo2 = {},
+		screens = [0, 768, 980, 1200],
+		allScreens = screens.length,
+		ua = u.toLowerCase(),
+		
+		html = document.documentElement,
+		b = [];
 
-            // browser
-            (!(/opera|webtv/i.test(ua)) && /msie\s(\d+)/.test(ua)) ? ('ie ie' + (/trident\/4\.0/.test(ua) ? '8' : RegExp.$1))
-                :is('firefox/') ? g + " " + f + (/firefox\/((\d+)(\.(\d+))(\.\d+)*)/.test(ua) ? ' ' + f + RegExp.$2 + ' ' + f + RegExp.$2 + "_" + RegExp.$4 : '')
-
-                :is('gecko/') ? g
-
-                :is('opera') ? o + (/version\/((\d+)(\.(\d+))(\.\d+)*)/.test(ua) ? ' ' + o + RegExp.$2 + ' ' + o + RegExp.$2 + "_" + RegExp.$4 : (/opera(\s|\/)(\d+)\.(\d+)/.test(ua) ? ' ' + o + RegExp.$2 + " " + o + RegExp.$2 + "_" + RegExp.$3 : ''))
-
-                :is('konqueror') ? 'konqueror'
-
-                :is('blackberry') ? (bb + (/Version\/(\d+)(\.(\d+)+)/i.test(ua) ? " " + bb + RegExp.$1 + " " + bb + RegExp.$1 + RegExp.$2.replace('.', '_') : (/Blackberry ?(([0-9]+)([a-z]?))[\/|;]/gi.test(ua) ? ' ' + bb + RegExp.$2 + (RegExp.$3 ? ' ' + bb + RegExp.$2 + RegExp.$3 : '') : ''))) // blackberry
-
-                :is('android') ? (a + (/Version\/(\d+)(\.(\d+))+/i.test(ua) ? " " + a + RegExp.$1 + " " + a + RegExp.$1 + RegExp.$2.replace('.', '_') : '') + (/Android (.+); (.+) Build/i.test(ua) ? ' ' + dv + ((RegExp.$2).replace(/ /g, "_")).replace(/-/g, "_") : '')) //android
-
-                :is('chrome') ? w + ' ' + c + (/chrome\/((\d+)(\.(\d+))(\.\d+)*)/.test(ua) ? ' ' + c + RegExp.$2 + ((RegExp.$4 > 0) ? ' ' + c + RegExp.$2 + "_" + RegExp.$4 : '') : '')
-
-                :is('iron') ? w + ' iron'
-
-                :is('applewebkit/') ? (w + ' ' + s + (/version\/((\d+)(\.(\d+))(\.\d+)*)/.test(ua) ? ' ' + s + RegExp.$2 + " " + s + RegExp.$2 + RegExp.$3.replace('.', '_') : (/ Safari\/(\d+)/i.test(ua) ? ((RegExp.$1 == "419" || RegExp.$1 == "417" || RegExp.$1 == "416" || RegExp.$1 == "412") ? ' ' + s + '2_0' : RegExp.$1 == "312" ? ' ' + s + '1_3' : RegExp.$1 == "125" ? ' ' + s + '1_2' : RegExp.$1 == "85" ? ' ' + s + '1_0' : '') : ''))) //applewebkit
-
-                :is('mozilla/') ? g : ''
-
-            // mobile
-            ,
-            is("android|mobi|mobile|j2me|iphone|ipod|ipad|blackberry|playbook|kindle|silk") ? m : ''
-
-            // os/platform
-            ,
-            is('j2me') ? 'j2me'
-
-                :is('ipad|ipod|iphone') ? (
-                (/CPU( iPhone)? OS (\d+[_|\.]\d+([_|\.]\d+)*)/i.test(ua) ? 'ios' + version('ios', RegExp.$2) : '') + ' ' + (/(ip(ad|od|hone))/gi.test(ua) ? RegExp.$1 : "")) //'iphone'
-                //:is('ipod')?'ipod'
-                //:is('ipad')?'ipad'
-                :is('playbook') ? 'playbook'
-
-                :is('kindle|silk') ? 'kindle'
-
-                :is('playbook') ? 'playbook'
-
-                :is('mac') ? 'mac' + (/mac os x ((\d+)[.|_](\d+))/.test(ua) ? (' mac' + (RegExp.$2) + ' mac' + (RegExp.$1).replace('.', "_")) : '')
-
-                :is('win') ? 'win' + (is('windows nt 6.2') ? ' win8'
-
-                :is('windows nt 6.1') ? ' win7'
-
-                :is('windows nt 6.0') ? ' vista'
-
-                :is('windows nt 5.2') || is('windows nt 5.1') ? ' win_xp'
-
-                :is('windows nt 5.0') ? ' win_2k'
-
-                :is('windows nt 4.0') || is('WinNT4.0') ? ' win_nt' : '')
-
-                :is('freebsd') ? 'freebsd'
-
-                : (is('x11|linux')) ? 'linux' : ''
-
-            // user agent language
-            ,
-            (/[; |\[](([a-z]{2})(\-[a-z]{2})?)[)|;|\]]/i.test(ua)) ? (lang + RegExp.$2).replace("-", "_") + (RegExp.$3 != '' ? (' ' + lang + RegExp.$1).replace("-", "_") : '') : ''
-
-            // beta: test if running iPad app
-            ,
-            (is('ipad|iphone|ipod') && !is('safari')) ? 'ipad_app' : ''
+	uaInfo.ua = ua;
+	b = uaInfo.getBrowser();
+	b = b.concat(uaInfo.getPlatform());
+	b = b.concat(uaInfo.getMobile());
+	b = b.concat(uaInfo.getIpadApp());
+	b = b.concat(uaInfo.getLang());
 
 
-        ];
+	console.log(b);
 
-    function screenSize() {
-        var w = (window.outerWidth || html.clientWidth) - 34;
-        var h = window.outerHeight || html.clientHeight;
-        var full = 9999;
-        uaInfo.orientation = ((w < h) ? "portrait" : "landscape");
-        // remove previous min-width, max-width, client-width, client-height, and orientation
-        html.className = html.className.replace(/ ?orientation_\w+/g, "").replace(/ [min|max|cl]+[w|h]_\d+/g, "")
+	function screenSize() {
+		var w = (window.outerWidth || html.clientWidth) - 34;
+		var h = window.outerHeight || html.clientHeight;
+		var full = 9999;
+		uaInfo2.orientation = ((w < h) ? "portrait" : "landscape");
+		// remove previous min-width, max-width, client-width, client-height, and orientation
+		html.className = html.className.replace(/ ?orientation_\w+/g, "").replace(/ [min|max|cl]+[w|h]_\d+/g, "")
 
-        for (var i = (allScreens - 1); i >= 0; i--) {
-            if (w >= screens[i]) {
+		for (var i = (allScreens - 1); i >= 0; i--) {
+			if (w >= screens[i]) {
 
-                uaInfo.minw = screens[(i)];
+				uaInfo2.minw = screens[(i)];
 
-                if (i <= 2) {
-                    uaInfo.maxw = screens[(i) + 1] - 1;
-                } else {
-                    uaInfo.maxw = full;
-                }
+				if (i <= 2) {
+					uaInfo2.maxw = screens[(i) + 1] - 1;
+				} else {
+					uaInfo2.maxw = full;
+				}
 
-                break;
-            }
-        }
-        widthClasses = "";
-        for (var info in uaInfo) {
-            widthClasses += " " + info + "_" + uaInfo[info]
-        };
-        html.className = (html.className + widthClasses);
-        return widthClasses;
-    } // screenSize
-
-
-    window.onresize = screenSize;
-    screenSize();
+				break;
+			}
+		}
+		widthClasses = "";
+		for (var info in uaInfo2) {
+			widthClasses += " " + info + "_" + uaInfo2[info]
+		};
+		html.className = (html.className + widthClasses);
+		return widthClasses;
+	} // screenSize
 
 
-    // dataURI Selector - Início
-    var data = new Image();
-    data.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
-    var div = document.createElement("div");
-    div.innerHTML = "<!--[if lt IE 9]><i></i><![endif]-->";
-    var isIeLessThan9 = (div.getElementsByTagName("i").length == 1);
-    data.onload = data.onerror = function(){
-        if(this.width != 1 || this.height != 1 || isIeLessThan9) {
-            document.getElementsByTagName('html')[0].className += " no-datauri";
-        }
-        else {
-            document.getElementsByTagName('html')[0].className += " datauri";
-        }
-    }
-    // dataURI Selector - Fim
+	window.onresize = screenSize;
+	screenSize();
 
 
-    // hidpi Selector - Início
-    function getDevicePixelRatio() {
-        if(window.devicePixelRatio === undefined) return 1; // No pixel ratio available. Assume 1:1.
-        return window.devicePixelRatio;
-    }
-    if (getDevicePixelRatio() > 1) {
-        document.getElementsByTagName('html')[0].className += ' hidpi';
-    }
-    else {
-        document.getElementsByTagName('html')[0].className += ' no-hidpi';
-    }
-    if (getDevicePixelRatio() > 1 && getDevicePixelRatio() < 2) {
-        document.getElementsByTagName('html')[0].className += ' retina_1x';
-    } else if (getDevicePixelRatio() >= 2) {
-        document.getElementsByTagName('html')[0].className += ' retina_2x';
-    }
-    // hidpi Selector - Fim
+	// dataURI Selector - Início
+	var data = new Image();
+	data.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+	var div = document.createElement("div");
+	div.innerHTML = "<!--[if lt IE 9]><i></i><![endif]-->";
+	var isIeLessThan9 = (div.getElementsByTagName("i").length == 1);
+	data.onload = data.onerror = function(){
+		if(this.width != 1 || this.height != 1 || isIeLessThan9) {
+			document.getElementsByTagName('html')[0].className += " no-datauri";
+		}
+		else {
+			document.getElementsByTagName('html')[0].className += " datauri";
+		}
+	}
+	// dataURI Selector - Fim
 
-    // push js
-    b.push('js');
-    
-    // add optional namespace. for example "mynamespace-js". this could help with namespace collisions
-    ns = ns === undefined ? "" : ns;
-    var i = 0;
-    if (ns === ""){
-        for (i; i < b.length; i++) {
-            b[i] = ns + b[i];
-        }
-    }else{
-        for (i; i < b.length; i++) {
-            var bs = b[i].split(" ");
-            b[i] = " ";
-            for (var j = 0; j < bs.length; j++) {
-                if (bs[i] !== undefined && bs[i].length > 0 && bs[i] !== ' '){
-                    b[i] = ns + bs[j] + " " + b[i];
-                }
-            }
-        
-        }
-    }
-    
-    var cssbs = (b.join(' '));
-    html.className = (cssbs + html.className.replace(/\b(no[-|_]?)?js\b/g, "")).replace(/^ /, "").replace(/ +/g, " ");
 
-    return cssbs;
+	// hidpi Selector - Início
+	function getDevicePixelRatio() {
+		if(window.devicePixelRatio === undefined) return 1; // No pixel ratio available. Assume 1:1.
+		return window.devicePixelRatio;
+	}
+	if (getDevicePixelRatio() > 1) {
+		document.getElementsByTagName('html')[0].className += ' hidpi';
+	}
+	else {
+		document.getElementsByTagName('html')[0].className += ' no-hidpi';
+	}
+	if (getDevicePixelRatio() > 1 && getDevicePixelRatio() < 2) {
+		document.getElementsByTagName('html')[0].className += ' retina_1x';
+	} else if (getDevicePixelRatio() >= 2) {
+		document.getElementsByTagName('html')[0].className += ' retina_2x';
+	}
+	// hidpi Selector - Fim
+
+	// push js
+	b.push('js');
+	
+	// add optional namespace. for example "mynamespace-js". this could help with namespace collisions
+	ns = ns === undefined ? "" : ns;
+	var i = 0;
+	if (ns === ""){
+		for (i; i < b.length; i++) {
+			b[i] = ns + b[i];
+		}
+	}else{
+		for (i; i < b.length; i++) {
+			var bs = b[i].split(" ");
+			b[i] = " ";
+			for (var j = 0; j < bs.length; j++) {
+				if (bs[i] !== undefined && bs[i].length > 0 && bs[i] !== ' '){
+					b[i] = ns + bs[j] + " " + b[i];
+				}
+			}
+		
+		}
+	}
+	
+	var cssbs = (b.join(' '));
+	html.className = (cssbs + html.className.replace(/\b(no[-|_]?)?js\b/g, "")).replace(/^ /, "").replace(/ +/g, " ");
+
+	return cssbs;
 }
 
 // define css_browser_selector_ns before loading this script to assign a namespace
