@@ -111,28 +111,32 @@ var screenInfo = {
 			
 		var screens = screenInfo.screens,
 			i = screens.length,
+			arr = [],
 			maxw, 
 			minw;
 		
 		while(i--) {
 			if (screenInfo.width >= screens[i]) {
-				minw = screens[(i)];
+				arr.push("minw_" + screens[(i)]);
 
 				if (i <= 2) {
-					maxw = screens[(i) + 1] - 1;
+					arr.push("maxw_" + screens[(i) + 1] - 1);
 				} else {
-					maxw = screenInfo.full;
+					arr.push("maxw_" + screenInfo.full);
 				}
 				break;
 			}
 		}
-		return " minw_" + minw + " maxw_" + maxw ;
+		return arr;
 	},
 	getOrientation : function() {
-		return screenInfo.width < screenInfo.height ? " orientation_portrait" : " orientation_landscape";
+		return screenInfo.width < screenInfo.height ? ["orientation_portrait"] : ["orientation_landscape"];
 	},
 	getInfo : function() {
-		return screenInfo.screenSize() + screenInfo.getOrientation();
+		var arr = [];
+		arr = arr.concat(screenInfo.screenSize());
+		arr = arr.concat(screenInfo.getOrientation());
+		return  arr;
 	},
 	getPixelRatio : function() {
 		var arr = [],
@@ -147,14 +151,16 @@ var screenInfo = {
 
 
 function css_browser_selector(u, ns) {
-	var ua = u.toLowerCase(),
-		
-		html = document.documentElement,
-		b = [];
+	var html = document.documentElement,
+		b = []
+		ns = ns ? ns : "";
+
+	/* js */
+	b.push('js');
 
 	/* ua */
-	uaInfo.ua = ua;
-	b = uaInfo.getBrowser();
+	uaInfo.ua = u.toLowerCase();
+	b = b.concat(uaInfo.getBrowser());
 	b = b.concat(uaInfo.getPlatform());
 	b = b.concat(uaInfo.getMobile());
 	b = b.concat(uaInfo.getIpadApp());
@@ -171,8 +177,8 @@ function css_browser_selector(u, ns) {
 		html.className = html.className + screenInfo.getInfo();
 	}
 
-	window.addEventListener('resize',  updateScreen);
-	window.addEventListener('deviceorientation',  updateScreen);
+	window.addEventListener('resize', updateScreen);
+	window.addEventListener('orientationchange', updateScreen, true);
 
 
 	// dataURI Selector - Início
@@ -192,30 +198,14 @@ function css_browser_selector(u, ns) {
 	// dataURI Selector - Fim
 
 
-	// push js
-	b.push('js');
+	/* removendo itens invalidos do array */
+	b = b.filter(function(e){
+		return e;
+	});
+
+	console.log(b);
 	
-	// add optional namespace. for example "mynamespace-js". this could help with namespace collisions
-	ns = ns === undefined ? "" : ns;
-	var i = 0;
-	if (ns === ""){
-		for (i; i < b.length; i++) {
-			b[i] = ns + b[i];
-		}
-	}else{
-		for (i; i < b.length; i++) {
-			var bs = b[i].split(" ");
-			b[i] = " ";
-			for (var j = 0; j < bs.length; j++) {
-				if (bs[i] !== undefined && bs[i].length > 0 && bs[i] !== ' '){
-					b[i] = ns + bs[j] + " " + b[i];
-				}
-			}
-		
-		}
-	}
-	
-	var cssbs = (b.join(' '));
+	var cssbs = b.join(' ' + ns);
 	html.className = (cssbs + html.className.replace(/\b(no[-|_]?)?js\b/g, "")).replace(/^ /, "").replace(/ +/g, " ");
 
 	return cssbs;
