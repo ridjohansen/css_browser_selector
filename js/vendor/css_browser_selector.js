@@ -1,12 +1,12 @@
 /*
- CSS Browser Selector 0.7
+ CSS Browser Selector 1.0
  Originally written by Rafael Lima (http://rafael.adm.br)
  http://rafael.adm.br/css_browser_selector
  License: http://creativecommons.org/licenses/by/2.5/
 
  Co-maintained by:
- https://github.com/verbatim/css_browser_selector
  https://github.com/ridjohansen/css_browser_selector
+ https://github.com/wbruno/css_browser_selector
 
  */
 var uaInfo = {
