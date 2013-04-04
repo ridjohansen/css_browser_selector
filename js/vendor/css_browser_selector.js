@@ -178,9 +178,6 @@ function css_browser_selector(u, ns) {
 		b = []
 		ns = ns ? ns : "";
 
-	/* js */
-	b = b.concat(['js']);
-
 	/* ua */
 	uaInfo.ua = u.toLowerCase();
 	b = b.concat(uaInfo.getBrowser());
@@ -188,6 +185,10 @@ function css_browser_selector(u, ns) {
 	b = b.concat(uaInfo.getMobile());
 	b = b.concat(uaInfo.getIpadApp());
 	b = b.concat(uaInfo.getLang());
+
+
+	/* js */
+	b = b.concat(['js']);
 
 	/* pixel ratio */
 	b = b.concat(screenInfo.getPixelRatio());

@@ -34,7 +34,8 @@ $(document).ready(function () {
 
 
 		/* removido orientation, minw e maxw pois estes dependem do ambiente e não do teste em si */
-		codes_returned = codes_returned.replace(/ ?orientation_\w+/g, "").replace(/ [min|max|cl]+[w|h]_\d+/g, "").replace(/ (no-)?hdipi+/g, "");
+		codes_returned = codes_returned.replace(/ ?orientation_\w+/g, "").replace(/ [min|max|cl]+[w|h]_\d+/g, "");
+		codes_returned = codes_returned.replace(/\s(no-)?hidpi/, "");
 
 
 		log("|"+codes_returned+"|");
