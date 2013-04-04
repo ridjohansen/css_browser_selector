@@ -102,7 +102,6 @@ var uaInfo = {
 var screenInfo = {
 	width : (window.outerWidth || html.clientWidth) - 34,
 	height : window.outerHeight || html.clientHeight,
-	full : 9999,
 	screens : [0, 768, 980, 1200],
 	
 	screenSize : function () {
@@ -117,12 +116,11 @@ var screenInfo = {
 		
 		while(i--) {
 			if (screenInfo.width >= screens[i]) {
-				arr.push("minw_" + screens[(i)]);
-
+				if(i) {
+					arr.push("minw_" + screens[(i)]);
+				}
 				if (i <= 2) {
 					arr.push("maxw_" + (screens[(i) + 1] - 1));
-				} else {
-					arr.push("maxw_" + screenInfo.full);
 				}
 				break;
 			}
@@ -142,10 +140,11 @@ var screenInfo = {
 		var arr = [],
 			pixelRatio = window.devicePixelRatio ? window.devicePixelRatio : 1;
 
-		arr.push(pixelRatio > 1 ? 'hidpi' : 'no-hidpi');
-
 		if(pixelRatio > 1) {
 			arr.push('retina_' + parseInt(pixelRatio) + 'x');
+			arr.push('hidpi');
+		} else {
+			arr.push('no-hidpi');
 		}
 		return arr;
 	}
