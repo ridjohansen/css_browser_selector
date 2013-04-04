@@ -31,6 +31,12 @@ $(document).ready(function () {
 		ua = item[0];
 		codes_expected = item[1];		
 		codes_returned = css_browser_selector(ua);
+
+
+		/* removido orientation, minw e maxw pois estes dependem do ambiente e não do teste em si */
+		codes_returned = codes_returned.replace(/ ?orientation_\w+/g, "").replace(/ [min|max|cl]+[w|h]_\d+/g, "").replace(/ (no-)?hdipi+/g, "");
+
+
 		log("|"+codes_returned+"|");
 		generate_class= (codes_expected=="header") ? codes_expected : "result partial"
 		if (test_mode=="generate")
