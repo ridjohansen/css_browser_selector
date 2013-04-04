@@ -420,6 +420,7 @@ border: 2px solid blue!important;
 <h2 id="Contributors">Contributors</h2>
 <ul>
     <li>Richard Duchatsch Johansen @ridjohansen (http://github.com/ridjohansen)</li>
+    <li>William Bruno (http://github.com/wbruno)</li>
     <li>Niyaz (http://github.com/niyazpk)</li>
     <li>Marcio Trindade (http://github.com/marciotrindade)</li>
     <li>rbottarelli (http://github.com/rbottarelli)</li>
