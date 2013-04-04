@@ -14,9 +14,6 @@ var user_agent_strings = [
 
 
 
-[""," js"],
-	["unprocessable navigator string"," js"],
-
 	["Iron","header"],
 
 	["mozilla/5.0 (windows; u; windows nt 6.1; en-us) applewebkit/532.0 (khtml, like gecko) iron/3.0.197.0 safari/532.0","webkit iron win win7 lang_en lang_en_us js"],
@@ -35,10 +32,10 @@ var user_agent_strings = [
 
 	["Firefox","header"],
 
-	["mozilla/5.0 (macintosh; u; intel mac os x 10.6; en-us;) gecko/20100401 firefox/6.0a2","gecko firefox firefox6 firefox6_0 mac mac10_6 lang_en lang_en_us js"],
-	["mozilla/5.0 (macintosh; u; intel mac os x 10.5; en-gb;) gecko/20090624 firefox/5.0","gecko firefox firefox5 firefox5_0 mac mac10_5 lang_en lang_en_gb js"],
-	["mozilla/5.0 (macintosh; u; intel mac os x 10.6; en-us; rv:1.9.2.3) gecko/20100401 firefox/3.6.3 gtb7.0","gecko firefox firefox3 firefox3_6 mac mac10_6 lang_en lang_en_us js"],
-	["mozilla/5.0 (macintosh; u; intel mac os x 10.5; en-gb; rv:1.9.1) gecko/20090624 firefox/3.5","gecko firefox firefox3 firefox3_5 mac mac10_5 lang_en lang_en_gb js"],
+	["mozilla/5.0 (macintosh; u; intel mac os x 10.6; en-us;) gecko/20100401 firefox/6.0a2","gecko firefox firefox6 firefox6_0 mac mac10 mac10_6 lang_en lang_en_us js"],
+	["mozilla/5.0 (macintosh; u; intel mac os x 10.5; en-gb;) gecko/20090624 firefox/5.0","gecko firefox firefox5 firefox5_0 mac mac10 mac10_5 lang_en lang_en_gb js"],
+	["mozilla/5.0 (macintosh; u; intel mac os x 10.6; en-us; rv:1.9.2.3) gecko/20100401 firefox/3.6.3 gtb7.0","gecko firefox firefox3 firefox3_6 mac mac10 mac10_6 lang_en lang_en_us js"],
+	["mozilla/5.0 (macintosh; u; intel mac os x 10.5; en-gb; rv:1.9.1) gecko/20090624 firefox/3.5","gecko firefox firefox3 firefox3_5 mac mac10 mac10_5 lang_en lang_en_gb js"],
 	["Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6","gecko firefox firefox2 firefox2_0 mac lang_en lang_en_us js"],
 	["Mozilla/5.0 (X11; U; Darwin Power Macintosh; en-US; rv:1.8.0.12) Gecko/20070803 Firefox/1.5.0.12 Fink Community Edition","gecko firefox firefox1 firefox1_5 mac lang_en lang_en_us js"],
 	["Mozilla/5.0 (Windows; u; Windows NT 5.1; en-us; rv:1.9.0.1) Gecko/2008070208 Firefox/3.0.1","gecko firefox firefox3 firefox3_0 win win_xp lang_en lang_en_us js"],
@@ -93,7 +90,7 @@ var user_agent_strings = [
 	["opera/9.80 (x11; linux i686; u; en) presto/2.2.15 version/10.01","opera opera10 opera10_01 linux lang_en js"],
 	["Opera/9.80 (X11; Linux x86_64; U; en) Presto/2.2.15 Version/10.10","opera opera10 opera10_10 linux lang_en js"],
 	["opera/9.80 (windows nt 6.0; u; en) presto/2.2.15 version/10.00","opera opera10 opera10_00 win vista lang_en js"],
-	["opera/9.50 (j2me/midp; opera mini/ 4.1.11320/546; u; pt)","opera opera9 opera9_50 mobile j2me lang_pt js"],
+	["opera/9.50 (j2me/midp; opera mini/ 4.1.11320/546; u; pt)","opera opera9 opera9_50 j2me mobile lang_pt js"],
 	["Opera/10.00 (Macintosh; Intel Mac OS X; u; en) presto/2.2.0","opera opera10 opera10_00 mac lang_en js"],
 	["Opera/9.20 (Macintosh; Intel Mac OS X; U; en)","opera opera9 opera9_20 mac lang_en js"],
 	["Opera/9.02 (Windows NT 5.0; U; en)","opera opera9 opera9_02 win win_2k lang_en js"],
@@ -168,15 +165,15 @@ var user_agent_strings = [
 	["Safari","header"],
 
 	["Mozilla/5.0 (Windows; U; Windows NT 5.1; ru-RU) AppleWebKit/533.18.1 (KHTML, like Gecko) Version/5.0.2 Safari/533.18.5","webkit safari safari5 safari5_0 win win_xp lang_ru lang_ru_ru js"],
-	["Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_8; zh-cn) AppleWebKit/533.18.1 (KHTML, like Gecko) Version/5.0.2 Safari/533.18.5","webkit safari safari5 safari5_0 mac mac10_5 lang_zh lang_zh_cn js"],
-	["Mozilla/5.0 (iPod; U; CPU iPhone OS 4_3_3 like Mac OS X; ja-jp) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile iphone lang_ja lang_ja_jp js"],
-	["Mozilla/5.0(iPad; U; CPU iPhone OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B314 Safari/531.21.10gin_lib.cc","webkit safari safari4 safari4_0 mobile iphone lang_en lang_en_us js"],
-	["Mozilla/5.0 (iPad;U;CPU OS 3_2_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B500 Safari/531.21.10","webkit safari safari4 safari4_0 mobile ipad lang_en lang_en_us js"],
+	["Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_8; zh-cn) AppleWebKit/533.18.1 (KHTML, like Gecko) Version/5.0.2 Safari/533.18.5","webkit safari safari5 safari5_0 mac mac10 mac10_5 lang_zh lang_zh_cn js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 4_3_3 like Mac OS X; ja-jp) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5","webkit safari safari5 safari5_0 ios ios4 ios4_3 ios4_3_3 ipod mobile lang_ja lang_ja_jp js"],
+	["Mozilla/5.0(iPad; U; CPU iPhone OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B314 Safari/531.21.10gin_lib.cc","webkit safari safari4 safari4_0 ios ios3 ios3_2 ipad mobile lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPad;U;CPU OS 3_2_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B500 Safari/531.21.10","webkit safari safari4 safari4_0 ios ios3 ios3_2 ios3_2_2 ipad mobile lang_en lang_en_us js"],
 	["mozilla/5.0 (windows; u; windows nt 6.0; pt-br) applewebkit/528.16 (khtml, like gecko) version/4.0 safari/528.16","webkit safari safari4 safari4_0 win vista lang_pt lang_pt_br js"],
 	["Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-gb) AppleWebKit/523.10.6 (KHTML, like Gecko) Version/3.0.4 Safari/523.10.6","webkit safari safari3 safari3_0 mac lang_en lang_en_gb js"],
-	["Mozilla/5.0 (iPod; U; CPU like Mac OS X; en) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/3A100a Safari/419.3","webkit safari safari3 safari3_0 mobile ipod lang_en js"],
-	["Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1C28 Safari/419.3","webkit safari safari3 safari3_0 mobile iphone lang_en js"],
-	["Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B334b Safari/531.21.10","webkit safari safari4 safari4_0 mobile ipad lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPod; U; CPU like Mac OS X; en) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/3A100a Safari/419.3","webkit safari safari3 safari3_0 ipod mobile lang_en js"],
+	["Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1C28 Safari/419.3","webkit safari safari3 safari3_0 iphone mobile lang_en js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B334b Safari/531.21.10","webkit safari safari4 safari4_0 ios ios3 ios3_2 ipad mobile lang_en lang_en_us js"],
 	["Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/522.11.1 (KHTML, like Gecko) Version/3.0.3 Safari/522.12.1","webkit safari safari3 safari3_0 mac lang_en js"],
 	["Mozilla/5.0 (Windows; U; Windows NT 5.1; bg) AppleWebKit/522.13.1 (KHTML, like Gecko) Version/3.0.2 Safari/522.13.1","webkit safari safari3 safari3_0 win win_xp lang_bg js"],
 	["Mozilla/5.0 (Windows; U; Windows NT 5.1; ru) AppleWebKit/522.11.3 (KHTML, like Gecko) Version/3.0 Safari/522.11.3","webkit safari safari3 safari3_0 win win_xp lang_ru js"],
@@ -199,7 +196,7 @@ var user_agent_strings = [
 
 	["android","header"],
 
-	["Mozilla/5.0 (Linux; U; Android 2.3.5; en-us; HTC Vision Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1","android android4 android4_0 device_htc_vision mobile linux lang_en lang_en_us js"],
+	["Mozilla/5.0 (Linux; U; Android 2.3.5; en-us; HTC Vision Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1","android android4 android4_0 device_htc_vision linux mobile lang_en lang_en_us js"],
 
 	["Blackberry","header"],
 
