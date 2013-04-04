@@ -120,7 +120,7 @@ var screenInfo = {
 				arr.push("minw_" + screens[(i)]);
 
 				if (i <= 2) {
-					arr.push("maxw_" + screens[(i) + 1] - 1);
+					arr.push("maxw_" + (screens[(i) + 1] - 1));
 				} else {
 					arr.push("maxw_" + screenInfo.full);
 				}
@@ -172,13 +172,13 @@ function css_browser_selector(u, ns) {
 	/* screen */
 	b = b.concat(screenInfo.getInfo());
 
-	var updateScreen = function(){
+	var updateScreen = function() {
 		html.className = html.className.replace(/ ?orientation_\w+/g, "").replace(/ [min|max|cl]+[w|h]_\d+/g, "");
-		html.className = html.className + screenInfo.getInfo();
+		html.className = html.className + ' ' + screenInfo.getInfo().join(' ');
 	}
 
 	window.addEventListener('resize', updateScreen);
-	window.addEventListener('orientationchange', updateScreen, true);
+	window.addEventListener('orientationchange', updateScreen);
 
 
 	// dataURI Selector - Início
