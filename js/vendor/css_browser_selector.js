@@ -98,15 +98,61 @@ var uaInfo = {
 		];
 	}
 }
+
+var screenInfo = {
+	width : (window.outerWidth || html.clientWidth) - 34,
+	height : window.outerHeight || html.clientHeight,
+	full : 9999,
+	screens : [0, 768, 980, 1200],
+	
+	screenSize : function () {
+		screenInfo.width = (window.outerWidth || html.clientWidth) - 34;
+		screenInfo.height = window.outerHeight || html.clientHeight;
+			
+		var screens = screenInfo.screens,
+			i = screens.length,
+			maxw, 
+			minw;
+		
+		while(i--) {
+			if (screenInfo.width >= screens[i]) {
+				minw = screens[(i)];
+
+				if (i <= 2) {
+					maxw = screens[(i) + 1] - 1;
+				} else {
+					maxw = screenInfo.full;
+				}
+				break;
+			}
+		}
+		return " minw_" + minw + " maxw_" + maxw ;
+	},
+	getOrientation : function() {
+		return screenInfo.width < screenInfo.height ? " orientation_portrait" : " orientation_landscape";
+	},
+	getInfo : function() {
+		return screenInfo.screenSize() + screenInfo.getOrientation();
+	},
+	getPixelRatio : function() {
+		var arr = [],
+			pixelRatio = window.devicePixelRatio ? window.devicePixelRatio : 1;
+
+		arr.push(pixelRatio > 1 ? 'hidpi' : 'no-hidpi');
+		arr.push('retina_' + parseInt(pixelRatio) + 'x');
+
+		return arr;
+	}
+}
+
+
 function css_browser_selector(u, ns) {
-	var uaInfo2 = {},
-		screens = [0, 768, 980, 1200],
-		allScreens = screens.length,
-		ua = u.toLowerCase(),
+	var ua = u.toLowerCase(),
 		
 		html = document.documentElement,
 		b = [];
 
+	/* ua */
 	uaInfo.ua = ua;
 	b = uaInfo.getBrowser();
 	b = b.concat(uaInfo.getPlatform());
@@ -114,42 +160,19 @@ function css_browser_selector(u, ns) {
 	b = b.concat(uaInfo.getIpadApp());
 	b = b.concat(uaInfo.getLang());
 
+	/* pixel ratio */
+	b = b.concat(screenInfo.getPixelRatio());
 
-	console.log(b);
+	/* screen */
+	b = b.concat(screenInfo.getInfo());
 
-	function screenSize() {
-		var w = (window.outerWidth || html.clientWidth) - 34;
-		var h = window.outerHeight || html.clientHeight;
-		var full = 9999;
-		uaInfo2.orientation = ((w < h) ? "portrait" : "landscape");
-		// remove previous min-width, max-width, client-width, client-height, and orientation
-		html.className = html.className.replace(/ ?orientation_\w+/g, "").replace(/ [min|max|cl]+[w|h]_\d+/g, "")
+	var updateScreen = function(){
+		html.className = html.className.replace(/ ?orientation_\w+/g, "").replace(/ [min|max|cl]+[w|h]_\d+/g, "");
+		html.className = html.className + screenInfo.getInfo();
+	}
 
-		for (var i = (allScreens - 1); i >= 0; i--) {
-			if (w >= screens[i]) {
-
-				uaInfo2.minw = screens[(i)];
-
-				if (i <= 2) {
-					uaInfo2.maxw = screens[(i) + 1] - 1;
-				} else {
-					uaInfo2.maxw = full;
-				}
-
-				break;
-			}
-		}
-		widthClasses = "";
-		for (var info in uaInfo2) {
-			widthClasses += " " + info + "_" + uaInfo2[info]
-		};
-		html.className = (html.className + widthClasses);
-		return widthClasses;
-	} // screenSize
-
-
-	window.onresize = screenSize;
-	screenSize();
+	window.addEventListener('resize',  updateScreen);
+	window.addEventListener('deviceorientation',  updateScreen);
 
 
 	// dataURI Selector - Início
@@ -168,24 +191,6 @@ function css_browser_selector(u, ns) {
 	}
 	// dataURI Selector - Fim
 
-
-	// hidpi Selector - Início
-	function getDevicePixelRatio() {
-		if(window.devicePixelRatio === undefined) return 1; // No pixel ratio available. Assume 1:1.
-		return window.devicePixelRatio;
-	}
-	if (getDevicePixelRatio() > 1) {
-		document.getElementsByTagName('html')[0].className += ' hidpi';
-	}
-	else {
-		document.getElementsByTagName('html')[0].className += ' no-hidpi';
-	}
-	if (getDevicePixelRatio() > 1 && getDevicePixelRatio() < 2) {
-		document.getElementsByTagName('html')[0].className += ' retina_1x';
-	} else if (getDevicePixelRatio() >= 2) {
-		document.getElementsByTagName('html')[0].className += ' retina_2x';
-	}
-	// hidpi Selector - Fim
 
 	// push js
 	b.push('js');
