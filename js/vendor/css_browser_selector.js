@@ -100,12 +100,12 @@ var uaInfo = {
 }
 
 var screenInfo = {
-	width : (window.outerWidth || html.clientWidth) - 39,
+	width : (window.outerWidth || html.clientWidth) - 9,
 	height : window.outerHeight || html.clientHeight,
 	screens : [0, 768, 980, 1200],
 	
 	screenSize : function () {
-		screenInfo.width = (window.outerWidth || html.clientWidth) - 39;
+		screenInfo.width = (window.outerWidth || html.clientWidth) - 9;
 		screenInfo.height = window.outerHeight || html.clientHeight;
 			
 		var screens = screenInfo.screens,
