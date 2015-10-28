@@ -216,6 +216,13 @@ function css_browser_selector(u, ns) {
 	}
 
 
+	/* save & add existing html classes */
+	var classes = html.className;
+	var classesArray = classes.split(/ /);
+
+	/* merge existing classes on html tag */
+	b = b.concat(classesArray);
+
 	/* removendo itens invalidos do array */
 	b = b.filter(function(e){
 		return e;
