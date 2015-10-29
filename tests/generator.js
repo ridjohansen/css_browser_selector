@@ -28,6 +28,7 @@ $(document).ready(function () {
 
     $.each(user_agent_strings,function(index, item) 
     	{
+		document.documentElement.className = '';
 		ua = item[0];
 		codes_expected = item[1];		
 		codes_returned = css_browser_selector(ua);
