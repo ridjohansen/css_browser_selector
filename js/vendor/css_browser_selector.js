@@ -9,6 +9,7 @@
  https://github.com/wbruno/css_browser_selector
 
  */
+(function() {
 var uaInfo = {
 	ua : '',
 	is : function (t) {
@@ -274,6 +275,10 @@ function css_browser_selector(u, ns) {
 	html.className = b.join(' ' + ns);
 	return html.className;
 }
+
+// Add css_browser_selector as a global object.
+window.css_browser_selector = css_browser_selector;
+})();
 
 // define css_browser_selector_ns before loading this script to assign a namespace
 var css_browser_selector_ns = css_browser_selector_ns || "";
