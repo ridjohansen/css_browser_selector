@@ -74,7 +74,9 @@ var uaInfo = {
 			:is('kindle|silk') ? 'kindle'
 			:is('playbook') ? 'playbook'
 			:is('mac') ? 'mac' + (/mac os x ((\d+)[.|_](\d+))/.test(ua) ? (' mac' + (RegExp.$2) + ' mac' + (RegExp.$1).replace('.', "_")) : '')
-			:is('win') ? 'win' + (is('windows nt 6.2') ? ' win8'
+			:is('win') ? 'win' + (is('windows nt 10.0') ? ' win10'
+			:is('windows nt 6.3') ? ' win8_1'
+			:is('windows nt 6.2') ? ' win8'
 			:is('windows nt 6.1') ? ' win7'
 			:is('windows nt 6.0') ? ' vista'
 			:is('windows nt 5.2') || is('windows nt 5.1') ? ' win_xp'
