@@ -35,7 +35,6 @@ var uaInfo = {
 			a = 'android',
 			bb = 'blackberry',
 			dv = 'device_',
-			v = 0,
 
 			ua = uaInfo.ua,
 			is = uaInfo.is;
