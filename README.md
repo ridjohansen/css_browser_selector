@@ -75,8 +75,8 @@
 
     <p>
         <strong>beta/experimental versions:</strong>
-        <br/>(https://github.com/ridjohansen/css_browser_selector/)
         <br/>(https://github.com/verbatim/css_browser_selector/)
+        <br/>(https://github.com/delka/css_browser_selector/)
     </p>
 </div>
 
@@ -87,23 +87,27 @@
 <h2 id="Identifies">Identifies</h2>
 <ul>
     <li>browsers: Firefox; IE; Opera; Safari; Chrome, Konqueror, Iron</li>
-    <li>browser versions: (most importantly: ie6, ie7, ie8, ie9)</li>
+    <li>browser versions: (most importantly: ie6, ie7, ie8, ie9, ie10, ie11, ie edge)</li>
     <li>rendering engines: Webkit; Mozilla; Gecko</li>
-    <li>platforms/OSes: Mac; Win: Win8, Win7, Vista, WinXP, Win2k, WinNT; FreeBSD; Linux/x11</li>
-    <li>devices: Ipod; Ipad; Iphone; WebTV; Blackberry; Android; J2me; RIM Playbook; mobile (generic)</li>
+    <li>platforms/OSes: Mac; Win: Win10, Win8.1, Win8, Win7, Vista, WinXP, Win2k, WinNT; FreeBSD; Linux/x11</li>
+    <li>devices: Ipod; Ipad; Iphone; WebTV; Blackberry; Android; Windows Phone, J2me; RIM Playbook; mobile (generic)</li>
     <li>enabled technology: JS (use in conjunction with &lt;html class="no-js"&gt; for even more granular
         control)
     </li>
     <li>language detection</li>
 </ul>
 
-<h4>Recent contributors to 0.5, 0.6, 0.7:</h4>
+<h4>Recent contributors to 0.5, 0.6, 0.7, 0.8:</h4>
 
 <ul>
     <li>
         <strong>improve and update features for cross-browser development</strong>
         <br/>https://github.com/ridjohansen/css_browser_selector/
     </li>
+    <li>
+        <strong>New Win OS, Browsers and WinPhone detection, save existing html classes:</strong>
+        <br/>https://github.com/delka/css_browser_selector/
+    </li>    
     <li>
         <strong>more detailed IE detection:</strong>
         <br/>https://github.com/kevingessner/css_browser_selector/
@@ -126,6 +130,18 @@
 
 <h4>Version History</h4>
 <ul>
+    <li>
+        <strong>v0.8 2015-10-29</strong>
+        <br/>Add support for Windows 8.1 and Windows 10
+        <br/>Add support for Windows Phone OS 7,8,10.
+        <br/>Add IE Edge Support
+        <br/>Save existing html classes
+        <br/>Prevent global variables - wrap code into anonymous function
+    </li> 
+    <li>
+        <strong>v0.71 2014-01-23</strong>
+        <br/>Add IE11 detection
+    </li>       
     <li>
         <strong>v0.7 2013-04-01</strong>
         <br/>Add support to Hi-dpi displays Selector
