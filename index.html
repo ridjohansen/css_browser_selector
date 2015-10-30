@@ -119,13 +119,20 @@
             <em lang="en">See an example:</em>
         </h4>
 <pre>
-&lt;html lang="pt-br" class="webkit chrome chrome21 win win8 js orientation_landscape minw_980 maxw_1199"&gt;
+&lt;html lang="pt-br" class="<span id="detectedclasses"></span>"&gt;
 </pre>
+<script>
+$(function() {
+  var r = document.getElementById('detectedclasses');
+  r.innerHTML = document.documentElement.className;
+});
+</script>
+       
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class="span12">
                     <p>
-                        <a href="https://github.com/ridjohansen/css_browser_selector/zipball/master"
+                        <a download href="https://raw.githubusercontent.com/ridjohansen/css_browser_selector/gh-pages/js/vendor/css_browser_selector.js"
                            class="btn btn-block btn-large btn-success">
                             CSS Browser Selector Download
                         </a>
@@ -188,22 +195,22 @@
         <p>
         Ele identifica:
 
-        - Navegadores: Firefox; IE; Opera; Safari; Chrome, Konqueror, Iron
+        - Navegadores: Firefox; IE; Edge; Opera; Safari; Chrome, Konqueror, Iron
 
-        - Versões dos navegadores: (ie6, ie7, ie8, ie9)
+        - Versões dos navegadores: (like chrome46, firefox41, ie6, ie7, ie8, ie9, ie10, ie11, ie edge, …)
 
         - Motores de renderização: Webkit; Mozilla; Gecko
 
-        - Sistemas Operacionais/Plataformas: Mac; Win: Win8, Win7, Vista, WinXP, Win2k, WinNT;
-        FreeBSD; Linux/x11
+        - Sistemas Operacionais/Plataformas: Mac; Win: Win10, Win8.1, Win8, Win7, Vista, WinXP, Win2k, WinNT; FreeBSD; Linux/x11
 
-        - Dispositivos: Ipod; Ipad; Iphone; WebTV; Blackberry; Android; J2me; RIM Playbook; mobile
-        (generico)
+        - Dispositivos: Ipod; Ipad; Iphone; WebTV; Blackberry; Android; Windows Phone; J2me; RIM Playbook; mobile (generic)
 
         - Tecnologia habilitada: JS (usado em conjunto com &lt;html class="no-js"&gt; para ainda ter mais
         controle)
 
         - Detecção de max-width e min-width
+        
+        - Detecção de retina
 
         - Detecção da orientação navegador
 
@@ -216,7 +223,7 @@
 
         <p>
             <strong>Versões Experimentais:</strong>
-            <br/>(http://github.com/ridjohansen/css_browser_selector/)
+            <br/>(http://github.com/delka/css_browser_selector/)
             <br/>(http://github.com/verbatim/css_browser_selector/)
         </p>
     </div>

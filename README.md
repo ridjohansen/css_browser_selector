@@ -13,7 +13,7 @@
 
     <h4>See an example:</h4>
 <pre>
-&lt;html lang="pt-br" class="webkit chrome chrome25 win win8 js orientation_landscape minw_980 maxw_1199 no-hidpi datauri"&gt;
+&lt;html lang="pt-br" class="webkit chrome chrome46 win win10 js retina_2x hidpi minw_1200 orientation_landscape datauri"&gt;
 </pre>
 
     <div class="container-fluid">
@@ -55,6 +55,7 @@
                         <li>device version</li>
                         <li>min-width and</li>
                         <li>max-width screen detection</li>
+                        <li>HiDPI (Retina) screen detection and Pixel Ratio detection</li>
                         <li>orientation screen detection (landscape or portrait).</li>
                     </ul>
                 </li>
@@ -75,8 +76,8 @@
 
     <p>
         <strong>beta/experimental versions:</strong>
-        <br/>(https://github.com/verbatim/css_browser_selector/)
         <br/>(https://github.com/delka/css_browser_selector/)
+        <br/>(https://github.com/verbatim/css_browser_selector/)
     </p>
 </div>
 
@@ -86,11 +87,14 @@
 
 <h2 id="Identifies">Identifies</h2>
 <ul>
-    <li>browsers: Firefox; IE; Opera; Safari; Chrome, Konqueror, Iron</li>
-    <li>browser versions: (most importantly: ie6, ie7, ie8, ie9, ie10, ie11, ie edge)</li>
+    <li>browsers: Firefox; IE; Edge; Opera; Safari; Chrome, Konqueror, Iron</li>
+    <li>browser versions: (like chrome46, firefox41, ie6, ie7, ie8, ie9, ie10, ie11, ie edge, …)</li>
     <li>rendering engines: Webkit; Mozilla; Gecko</li>
     <li>platforms/OSes: Mac; Win: Win10, Win8.1, Win8, Win7, Vista, WinXP, Win2k, WinNT; FreeBSD; Linux/x11</li>
-    <li>devices: Ipod; Ipad; Iphone; WebTV; Blackberry; Android; Windows Phone, J2me; RIM Playbook; mobile (generic)</li>
+    <li>devices: Ipod; Ipad; Iphone; WebTV; Blackberry; Android; Windows Phone; J2me; RIM Playbook; mobile (generic)</li>
+    <li>viewport: min-width/max-width screen detection
+    <li>retina: HiDPI (Retina) screen detection and Pixel Ratio detection
+    <li>orientation: landscape or portrait
     <li>enabled technology: JS (use in conjunction with &lt;html class="no-js"&gt; for even more granular
         control)
     </li>
@@ -105,7 +109,7 @@
         <br/>https://github.com/ridjohansen/css_browser_selector/
     </li>
     <li>
-        <strong>New Win OS, Browsers and WinPhone detection, save existing html classes:</strong>
+        <strong>new Win OS, Browsers and WinPhone detection, save existing html classes:</strong>
         <br/>https://github.com/delka/css_browser_selector/
     </li>    
     <li>
@@ -130,6 +134,10 @@
 
 <h4>Version History</h4>
 <ul>
+    <li>
+        <strong>v0.81 2015-10-30</strong>
+        <br/>Fix IE8 error
+    </li>    
     <li>
         <strong>v0.8 2015-10-29</strong>
         <br/>Add support for Windows 8.1 and Windows 10
@@ -437,6 +445,7 @@ border: 2px solid blue!important;
 <ul>
     <li>Richard Duchatsch Johansen @ridjohansen (http://github.com/ridjohansen)</li>
     <li>William Bruno (http://github.com/wbruno)</li>
+    <li>Ihor Zenich (http://github.com/delka)</li>
     <li>Niyaz (http://github.com/niyazpk)</li>
     <li>Marcio Trindade (http://github.com/marciotrindade)</li>
     <li>rbottarelli (http://github.com/rbottarelli)</li>

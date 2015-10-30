@@ -6,8 +6,8 @@
 
  Co-maintained by:
  https://github.com/ridjohansen/css_browser_selector
- https://github.com/wbruno/css_browser_selector
  https://github.com/delka/css_browser_selector
+ https://github.com/verbatim/css_browser_selector
  */
 (function() {
 var uaInfo = {
