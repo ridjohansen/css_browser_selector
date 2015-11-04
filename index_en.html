@@ -117,14 +117,20 @@
 
     <h4>See an example:</h4>
 <pre>
-&lt;html lang="pt-br" class="webkit chrome chrome21 win win8 js orientation_landscape minw_980 maxw_1199"&gt;
+&lt;html lang="pt-br" class="<span id="detectedclasses"></span>"&gt;
 </pre>
+<script>
+$(function() {
+  var r = document.getElementById('detectedclasses');
+  r.innerHTML = document.documentElement.className;
+});
+</script>
 
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="span12">
                 <p>
-                    <a href="https://github.com/ridjohansen/css_browser_selector/zipball/master"
+                    <a download href="https://raw.githubusercontent.com/ridjohansen/css_browser_selector/gh-pages/js/vendor/css_browser_selector.js"
                        class="btn btn-block btn-large btn-success">
                         CSS Browser Selector Download
                     </a>
@@ -165,6 +171,7 @@
                         <li>device version</li>
                         <li>min-width and</li>
                         <li>max-width screen detection</li>
+                        <li>HiDPI (Retina) screen detection and Pixel Ratio detection</li>
                         <li>orientation screen detection (landscape or portrait).</li>
                     </ul>
                 </li>
@@ -179,7 +186,7 @@
 
     <p>
         <strong>beta/experimental versions:</strong>
-        <br/>(https://github.com/ridjohansen/css_browser_selector/)
+        <br/>(https://github.com/delka/css_browser_selector/)
         <br/>(https://github.com/verbatim/css_browser_selector/)
     </p>
 </div>
@@ -190,24 +197,31 @@
 
 <h2 id="Identifies">Identifies</h2>
 <ul>
-    <li>browsers: Firefox; IE; Opera; Safari; Chrome, Konqueror, Iron</li>
-    <li>browser versions: (most importantly: ie6, ie7, ie8, ie9)</li>
+    <li>browsers: Firefox; IE; Edge; Opera; Safari; Chrome, Konqueror, Iron</li>
+    <li>browser versions: (like chrome46, firefox41, ie6, ie7, ie8, ie9, ie10, ie11, ie edge, …)</li>
     <li>rendering engines: Webkit; Mozilla; Gecko</li>
-    <li>platforms/OSes: Mac; Win: Win8, Win7, Vista, WinXP, Win2k, WinNT; FreeBSD; Linux/x11</li>
-    <li>devices: Ipod; Ipad; Iphone; WebTV; Blackberry; Android; J2me; RIM Playbook; mobile (generic)</li>
-    <li>enabled technology: JS (use in conjunction with &lt;html class="no-js"&gt; for even more granular control)</li>
-    <li>max-width e min-width screen detection (helper for Media Queries like screen width classes)</li>
-    <li>browser orientation detection (helper for Media Queries like orientation classes)</li>
+    <li>platforms/OSes: Mac; Win: Win10, Win8.1, Win8, Win7, Vista, WinXP, Win2k, WinNT; FreeBSD; Linux/x11</li>
+    <li>devices: Ipod; Ipad; Iphone; WebTV; Blackberry; Android; Windows Phone; J2me; RIM Playbook; mobile (generic)</li>
+    <li>viewport: min-width/max-width screen detection
+    <li>retina: HiDPI (Retina) screen detection and Pixel Ratio detection
+    <li>orientation: landscape or portrait
+    <li>enabled technology: JS (use in conjunction with &lt;html class="no-js"&gt; for even more granular
+        control)
+    </li>
     <li>language detection</li>
 </ul>
 
-<h4>Recent contributors to 0.5, 0.6, 0.7:</h4>
+<h4>Recent contributors to 0.5, 0.6, 0.7, 0.8:</h4>
 
 <ul>
     <li>
         <strong>improve and update features for cross-browser development</strong>
         <br/>https://github.com/ridjohansen/css_browser_selector/
     </li>
+    <li>
+        <strong>new Win OS, Browsers and WinPhone detection, save existing html classes:</strong>
+        <br/>https://github.com/delka/css_browser_selector/
+    </li>    
     <li>
         <strong>more detailed IE detection:</strong>
         <br/>https://github.com/kevingessner/css_browser_selector/
@@ -231,12 +245,34 @@
 <h4>Version History</h4>
 <ul>
     <li>
+        <strong>v0.81 2015-10-30</strong>
+        <br/>Fix IE8 error
+    </li>    
+    <li>
+        <strong>v0.8 2015-10-29</strong>
+        <br/>Add support for Windows 8.1 and Windows 10
+        <br/>Add support for Windows Phone OS 7,8,10.
+        <br/>Add IE Edge Support
+        <br/>Save existing html classes
+        <br/>Prevent global variables - wrap code into anonymous function
+    </li> 
+    <li>
+        <strong>v0.71 2014-01-23</strong>
+        <br/>Add IE11 detection
+    </li>       
+    <li>
+        <strong>v0.7 2013-04-01</strong>
+        <br/>Add support to Hi-dpi displays Selector
+        <br/>Add Pixel Ratio support for 1.5 and 2
+        <br/>Add support to dataURI's Selector
+    </li>
+    <li>
         <strong>v0.6.2 2012-09-10</strong>
         <br/>add new features for cross-browser development
         <br/>update the commons devices width (based on Twitter Bootstrap)
-        <br/>improve continuously evaluates browser max-width and min-width (helper for Media Queries like screen
+        <br/>improve continuously evaluates browser max-width and min-width (helper for mediaqueries-like screen
         width classes)
-        <br/>improve continuously evaluates browser orientation (helper for Media Queries like orientation
+        <br/>improve continuously evaluates browser orientation (helper for mediaqueries-like orientation
         classes)
     </li>
     <li>
@@ -519,6 +555,8 @@ border: 2px solid blue!important;
 <h2 id="Contributors">Contributors</h2>
 <ul>
     <li>Richard Duchatsch Johansen @ridjohansen (http://github.com/ridjohansen)</li>
+    <li>William Bruno (http://github.com/wbruno)</li>
+    <li>Ihor Zenich (http://github.com/delka)</li>
     <li>Niyaz (http://github.com/niyazpk)</li>
     <li>Marcio Trindade (http://github.com/marciotrindade)</li>
     <li>rbottarelli (http://github.com/rbottarelli)</li>

@@ -1,13 +1,13 @@
 /*
- CSS Browser Selector 0.8
+ CSS Browser Selector 0.81
  Originally written by Rafael Lima (http://rafael.adm.br)
  http://rafael.adm.br/css_browser_selector
  License: http://creativecommons.org/licenses/by/2.5/
 
  Co-maintained by:
  https://github.com/ridjohansen/css_browser_selector
- https://github.com/wbruno/css_browser_selector
  https://github.com/delka/css_browser_selector
+ https://github.com/verbatim/css_browser_selector
  */
 (function() {
 var uaInfo = {
@@ -213,8 +213,12 @@ function css_browser_selector(u, ns) {
 		html.className = html.className + ' ' + screenInfo.getInfo().join(' ');
 	}
 
-	window.addEventListener('resize', updateScreen);
-	window.addEventListener('orientationchange', updateScreen);
+	if (window.addEventListener) {
+		window.addEventListener('resize', updateScreen);
+		window.addEventListener('orientationchange', updateScreen);
+	} else if (window.attachEvent) {
+		window.attachEvent('onresize', updateScreen);
+	}
 
 	/* dataURI */
 	var data = dataUriInfo.getImg();

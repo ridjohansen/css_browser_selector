@@ -122,13 +122,19 @@
     </p>
     <h4>Veja o exemplo:</h4>
 <pre>
-&lt;html lang="pt-br" class="webkit chrome chrome21 win win8 js orientation_landscape minw_980 maxw_1199"&gt;
+&lt;html lang="pt-br" class="<span id="detectedclasses"></span>"&gt;
 </pre>
+<script>
+$(function() {
+  var r = document.getElementById('detectedclasses');
+  r.innerHTML = document.documentElement.className;
+});
+</script>
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="span12">
                 <p>
-                    <a href="https://github.com/ridjohansen/css_browser_selector/zipball/master"
+                    <a download href="https://raw.githubusercontent.com/ridjohansen/css_browser_selector/gh-pages/js/vendor/css_browser_selector.js"
                        class="btn btn-block btn-large btn-success">
                         CSS Browser Selector Download
                     </a>
@@ -169,6 +175,7 @@
                         <li>dispositivos</li>
                         <li>versão do dispositivo</li>
                         <li>min-width e max-width</li>
+                        <li>retina</li>
                         <li>detecção de orientação da tela (paisagem ou retrato)</li>
                     </ul>
                 </li>
@@ -183,7 +190,7 @@
 
     <p>
         <strong>Versões Experimentais:</strong>
-        <br/>(http://github.com/ridjohansen/css_browser_selector/)
+        <br/>(http://github.com/delka/css_browser_selector/)
         <br/>(http://github.com/verbatim/css_browser_selector/)
     </p>
 </div>
@@ -194,13 +201,14 @@
 
 <h2 id="Identifies">Ele identifica</h2>
 <ul>
-    <li>Navegadores: Firefox; IE; Opera; Safari; Chrome, Konqueror, Iron</li>
-    <li>Versões dos navegadores: (most importantly: ie6, ie7, ie8, ie9)</li>
+    <li>Navegadores: Firefox; IE; Edge; Opera; Safari; Chrome, Konqueror, Iron</li>
+    <li>Versões dos navegadores: (like chrome46, firefox41, ie6, ie7, ie8, ie9, ie10, ie11, ie edge, …)</li>
     <li>Motores de renderização: Webkit; Mozilla; Gecko</li>
-    <li>Sistemas Operacionais/Plataformas: Mac; Win: Win8, Win7, Vista, WinXP, Win2k, WinNT; FreeBSD; Linux/x11</li>
-    <li>Dispositivos: Ipod; Ipad; Iphone; WebTV; Blackberry; Android; J2me; RIM Playbook; mobile (generico)</li>
+    <li>Sistemas Operacionais/Plataformas: Mac; Win: Win10, Win8.1, Win8, Win7, Vista, WinXP, Win2k, WinNT; FreeBSD; Linux/x11</li>
+    <li>Dispositivos: Ipod; Ipad; Iphone; WebTV; Blackberry; Android; Windows Phone; J2me; RIM Playbook; mobile (generic)</li>
     <li>Tecnologia habilitada: JS (usado em conjunto com &lt;html class="no-js"&gt; para ainda ter mais controle)</li>
     <li>detecção de max-width e min-width (Método alternativo de Media Queries para o detecçãode largura)</li>
+    <li>detecção de retina</li>
     <li>detecção da orientação navegador (Método alternativo de Media Queries para a detecçãode da orientação)</li>
     <li>Detecção de idioma</li>
 </ul>
@@ -234,6 +242,28 @@
 
 <h4>Histórico de versões</h4>
 <ul>
+    <li>
+        <strong>v0.81 2015-10-30</strong>
+        <br/>Fix IE8 error
+    </li>    
+    <li>
+        <strong>v0.8 2015-10-29</strong>
+        <br/>Add support for Windows 8.1 and Windows 10
+        <br/>Add support for Windows Phone OS 7,8,10.
+        <br/>Add IE Edge Support
+        <br/>Save existing html classes
+        <br/>Prevent global variables - wrap code into anonymous function
+    </li> 
+    <li>
+        <strong>v0.71 2014-01-23</strong>
+        <br/>Add IE11 detection
+    </li>       
+    <li>
+        <strong>v0.7 2013-04-01</strong>
+        <br/>Add support to Hi-dpi displays Selector
+        <br/>Add Pixel Ratio support for 1.5 and 2
+        <br/>Add support to dataURI's Selector
+    </li>   
     <li>
         <strong>v0.6.2 2012-09-10</strong>
         <br/>adicionar novos recursos para o desenvolvimento cross-browser
@@ -523,6 +553,8 @@ border: 2px solid blue!important;
 <h2 id="Contribuidores">Contribuidores</h2>
 <ul>
     <li>Richard Duchatsch Johansen @ridjohansen (http://github.com/ridjohansen)</li>
+    <li>William Bruno (http://github.com/wbruno)</li>
+    <li>Ihor Zenich (http://github.com/delka)</li>
     <li>Niyaz (http://github.com/niyazpk)</li>
     <li>Marcio Trindade (http://github.com/marciotrindade)</li>
     <li>rbottarelli (http://github.com/rbottarelli)</li>
