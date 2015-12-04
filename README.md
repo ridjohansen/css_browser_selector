@@ -20,7 +20,7 @@
         <div class="row-fluid">
             <div class="span12">
                 <p>
-                    <a href="https://github.com/ridjohansen/css_browser_selector/zipball/master"
+                    <a download href="https://raw.githubusercontent.com/ridjohansen/css_browser_selector/gh-pages/js/vendor/css_browser_selector.js"
                        class="btn btn-block btn-large btn-success">
                         CSS Browser Selector Download
                     </a>
@@ -111,7 +111,7 @@
     <li>
         <strong>new Win OS, Browsers and WinPhone detection, save existing html classes:</strong>
         <br/>https://github.com/delka/css_browser_selector/
-    </li>    
+    </li>
     <li>
         <strong>more detailed IE detection:</strong>
         <br/>https://github.com/kevingessner/css_browser_selector/
@@ -137,7 +137,7 @@
     <li>
         <strong>v0.81 2015-10-30</strong>
         <br/>Fix IE8 error
-    </li>    
+    </li>
     <li>
         <strong>v0.8 2015-10-29</strong>
         <br/>Add support for Windows 8.1 and Windows 10
@@ -145,11 +145,11 @@
         <br/>Add IE Edge Support
         <br/>Save existing html classes
         <br/>Prevent global variables - wrap code into anonymous function
-    </li> 
+    </li>
     <li>
         <strong>v0.71 2014-01-23</strong>
         <br/>Add IE11 detection
-    </li>       
+    </li>
     <li>
         <strong>v0.7 2013-04-01</strong>
         <br/>Add support to Hi-dpi displays Selector
@@ -272,7 +272,7 @@
 &lt;/style&gt;
 </pre>
         </div>
-        
+
         <div class="span4">
             <h3 class="btn btn-block btn-large btn-primary">dataURI Selector</h3>
 <pre>
@@ -289,12 +289,12 @@
 &lt;/style&gt;
 
 &lt;div class="example_bg"&gt;
-  &lt;img class="img_uri" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEUAAAD///+l2Z/dAAAAM0lEQVR4nGP4/5/h/1+G/58ZDrAz3D/McH8yw83NDDeNGe4Ug9C9zwz3gVLMDA/A6P9/AFGGFyjOXZtQAAAAAElFTkSuQmCC" alt="with dataURI" /&gt; 
-  &lt;img class="img_default" src="img_default.png" alt="without dataURI" /&gt; 
+  &lt;img class="img_uri" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEUAAAD///+l2Z/dAAAAM0lEQVR4nGP4/5/h/1+G/58ZDrAz3D/McH8yw83NDDeNGe4Ug9C9zwz3gVLMDA/A6P9/AFGGFyjOXZtQAAAAAElFTkSuQmCC" alt="with dataURI" /&gt;
+  &lt;img class="img_default" src="img_default.png" alt="without dataURI" /&gt;
 &lt;/div&gt;
 </pre>
         </div>
-        
+
         <div class="span4">
             <h3 class="btn btn-block btn-large btn-primary">Hi-dpi and Pixel-Ratio Selector</h3>
 <pre>
@@ -323,7 +323,7 @@
 
 or /* http://bjango.com/articles/min-device-pixel-ratio/ */
 
-@media 
+@media
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -342,7 +342,7 @@ only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
+only screen and (                min-resolution: 2dppx) {
     .example_bg {
         background-image: url('bg_hidpi_2x.png');
     }
@@ -354,8 +354,8 @@ only screen and (                min-resolution: 2dppx) {
 
 &lt;div class="example_bg"&gt;
     &lt;img class="img_hidpi x2" src="img_hidpi_2x.png" alt="with pixel-ratio &gt;= 2" /&gt;
-    &lt;img class="img_hidpi x1" src="img_hidpi_1x.png" alt="with pixel-ratio &gt; 1 and &lt; 2" /&gt; 
-    &lt;img class="img_default" src="img_default.png" alt="with pixel-ratio 1 or default" /&gt; 
+    &lt;img class="img_hidpi x1" src="img_hidpi_1x.png" alt="with pixel-ratio &gt; 1 and &lt; 2" /&gt;
+    &lt;img class="img_default" src="img_default.png" alt="with pixel-ratio 1 or default" /&gt;
 &lt;/div&gt;
 </pre>
         </div>
